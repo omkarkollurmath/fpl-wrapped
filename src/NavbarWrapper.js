@@ -15,7 +15,7 @@ const NavbarWrapper = () => {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-              FPL Wrapped
+              Fantasy Premier League - Wrapped
             </Navbar.Brand>
         </Container>
       </Navbar>
