@@ -8,11 +8,15 @@ import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
 
     const navigate = useNavigate();
-    const [teamId, setTeamId] = useState();
+    const [teamId, setTeamId] = useState('');
 
     const handleTextChange = (event) => {
-        setTeamId(event.target.value);
-      };
+        const value = event.target.value;
+        const regex = /^[0-9]{0,10}$/;
+        if (regex.test(value)) {
+            setTeamId(value);
+        }
+    };
 
     const handleSubmitButtonOnClick = () => {
         if(teamId.trim().length !== 0 ){
@@ -30,10 +34,11 @@ const Home = () => {
                 <input
                     type='text'
                     placeholder={'1234567'}
-                    pattern='[1-9]{1}[0-9]{9}'
+                    // pattern='[1-9]{1}[0-9]{9}'
                     maxlength='10'
                     onChange={handleTextChange}
                     autoComplete="off"
+                    required
                 />
                 <div className="button-submit">
                     <Button variant="primary" onClick={handleSubmitButtonOnClick}>
@@ -41,7 +46,7 @@ const Home = () => {
                     </Button>
                 </div>
             </div>
-            <ToastContainer autoClose={3000} hideProgressBar theme="light" position="top-center"/>
+            <ToastContainer autoClose={2000} hideProgressBar theme="light" position="top-center"/>
         </React.Fragment>
     )
 }
