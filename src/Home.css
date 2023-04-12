@@ -1,4 +1,15 @@
 .home-page-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding-top: 100px;
-    padding-right: 100px;
+}
+
+.team-id-text{
+    align-self: center;
+    padding-inline-end: 10px;
+}
+
+.button-submit{
+    padding-inline-start: 10px;
 }

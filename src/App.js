@@ -4,6 +4,7 @@ import "./App.css"
 import NavbarWrapper from "./NavbarWrapper"
 import Home from "./Home";
 import Footer from "./Footer";
+import Summary from "./Summary";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <div className="App">
         <Routes>
           <Route exact path="/" Component={Home} />
+        </Routes>
+        <Routes>
+          <Route exact path="/summary" Component={Summary} />
         </Routes>
       </div>
       <Footer />
