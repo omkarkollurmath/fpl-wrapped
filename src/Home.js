@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useRef } from "react";
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router';
 import "./Home.css";
@@ -11,20 +11,30 @@ const Home = () => {
     const [teamId, setTeamId] = useState('');
 
     const handleTextChange = (event) => {
-        const value = event.target.value;
-        const regex = /^[0-9]{0,10}$/;
-        if (regex.test(value)) {
-            setTeamId(value);
-        }
+        setTeamId(event.target.value);
+    
     };
 
     const handleSubmitButtonOnClick = () => {
+
+        const regex = /^\d{0,10}$/;
+
         if(teamId.trim().length !== 0 ){
-            navigate(`/${teamId}/summary`);
+
+            if (regex.test(teamId)) {
+                navigate(`/${teamId}/summary`);
+            }else{
+               
+                toast.error("Invalid Team ID.Please enter only digits.");
+                setTeamId('');
+            }
         }
         else{
-            toast.error('Team Id cannot be empty');
+            
+            toast.error("Team Id cannot be empty")
         }
+
+        
     };
 
     return(
@@ -39,6 +49,7 @@ const Home = () => {
                     onChange={handleTextChange}
                     autoComplete="off"
                     required
+                    value={teamId}
                 />
                 <div className="button-submit">
                     <Button variant="primary" onClick={handleSubmitButtonOnClick}>
