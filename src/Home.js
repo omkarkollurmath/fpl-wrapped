@@ -1,4 +1,4 @@
-import React, { useState , useRef } from "react";
+import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router';
 import "./Home.css";
@@ -44,7 +44,6 @@ const Home = () => {
                 <input
                     type='text'
                     placeholder={'1234567'}
-                    // pattern='[1-9]{1}[0-9]{9}'
                     maxlength='10'
                     onChange={handleTextChange}
                     autoComplete="off"
