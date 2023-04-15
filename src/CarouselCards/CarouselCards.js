@@ -9,6 +9,8 @@ import MostValuablePlayer from "./MostValuablePlayer";
 import BestXI from "./BestXI";
 import playerData from "../internalData/data_with_points_and_pos.json";
 
+import './Carousel.css';
+
 export const CarouselCards = (props) => {
   const settings = {
     dots: true,
@@ -124,7 +126,7 @@ export const CarouselCards = (props) => {
   processedData.push(processData());
 
   return (
-    <Slider {...settings} style={{ paddingTop: "75px" }}>
+    <Slider {...settings} arrows style={{ paddingTop: "75px" }}>
       <div>
         <BestCaptainPick />
       </div>
