@@ -5,35 +5,14 @@ import { useParams } from 'react-router-dom';
 
 export const Summary = () => {
 
-    const { id } = useParams();
-
-
+    const { teamId } = useParams();
     const [loading, setLoading] = useState(true);
-    //const [dataProcessingDone, setDataProcessingDone] = useState(false);
     const [data, setData] = useState(undefined);
-
-    //get all data from api calls 
-    //set dataProcessingDone to true once all data processing is done
-
-
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //       const response = await fetch(`http://localhost:8000/get/${id}`);
-    //       const responseData = await response.json();
-    //       setData(responseData);
-    //     };
-      
-    //     fetchData();
-        
-    //     if (data !== undefined) {
-    //       setLoading(false);
-    //     }
-    //   }, [data, id]);
 
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await fetch(`http://localhost:8000/get/${id}`);
+          const response = await fetch(`http://localhost:8000/get/${teamId}`);
           const responseData = await response.json();
           setData(responseData);
           setLoading(false);
@@ -43,7 +22,7 @@ export const Summary = () => {
       };
     
       fetchData();
-    }, [id]);
+    }, [teamId]);
   
 
     return (
