@@ -12,7 +12,6 @@ const Home = () => {
 
     const handleTextChange = (event) => {
         setTeamId(event.target.value);
-    
     };
 
     const handleSubmitButtonOnClick = () => {
@@ -24,14 +23,13 @@ const Home = () => {
             if (regex.test(teamId)) {
                 navigate(`/${teamId}/summary`);
             }else{
-               
-                toast.error("Invalid Team ID.Please enter only digits.");
+                toast.error("Invalid Team ID. Please enter only digits.");
                 setTeamId('');
             }
         }
         else{
             
-            toast.error("Team Id cannot be empty")
+            toast.error("Team Id cannot be empty.")
         }
 
         

@@ -19,8 +19,6 @@ export const CarouselCards = (props) => {
     slidesToScroll: 1,
   };
 
-  //console.log({...props});
-
   const teamData = props.data;
 
   function findMostFrequent(arr) {
@@ -51,10 +49,8 @@ export const CarouselCards = (props) => {
   }
 
   const processData = () => {
-    
 
     const weeklyCaptainData = [];
-
     
     for (let i = 0; i < teamData["weeklyData"].length; i++) {
       let captain = teamData["weeklyData"][i]["picks"]
@@ -63,15 +59,12 @@ export const CarouselCards = (props) => {
       weeklyCaptainData.push(captain);
     }
 
-
-
     const MostCaptainedPlayerID = findMostFrequent(weeklyCaptainData);
     
     const MostCaptainedPlayerName = playerData
       .filter((player) => player["id"] === +MostCaptainedPlayerID)
       .map((player) => player["Player_Name"])[0];
     
-
     const best_week_points = Math.max.apply(
       Math,
       teamData["teamHistoryData"]["current"].map((gameweek) => {
