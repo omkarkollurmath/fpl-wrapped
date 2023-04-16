@@ -45,7 +45,7 @@ export const CarouselCards = (props) => {
       }
     }
 
-    return mostFrequent;
+    return {mostFrequent, maxCount};
   }
 
   const processData = () => {
@@ -59,12 +59,51 @@ export const CarouselCards = (props) => {
       weeklyCaptainData.push(captain);
     }
 
-    const MostCaptainedPlayerID = findMostFrequent(weeklyCaptainData);
+    //best captain
+    const captainIdPointsObjectForAllGameWeeks = []
+
+    for (let i = 0; i < weeklyCaptainData.length; i++) {
+      let getGameWeekPointsForCaptain = playerData
+        .filter((player) => player["id"] === weeklyCaptainData[i])
+        .map((player) => [{
+           "id": player["id"],
+           "Player_Name": player["Player_Name"],
+           "Team_Name": player["Team_Name"],
+           "Gameweek_Points": player["Gameweek_Points"][i]
+            }]
+        )[0];
+        captainIdPointsObjectForAllGameWeeks.push(getGameWeekPointsForCaptain[0]);
+    }
+
+    //TODO: we might no need this below filter which filters out gameweek captains without gameweek points
+    //This is temporary solution to inconsistency of data in data_with_points_and_pos.json
+    const removeObjectsWithoutGameWeekPoints = captainIdPointsObjectForAllGameWeeks
+    .filter((object) => object["Gameweek_Points"]);
+
+    const bestCaptainPick = removeObjectsWithoutGameWeekPoints.reduce((retObj, obj, index) => {
+      if (obj["Gameweek_Points"] > retObj.maxValue) {
+        return {
+          maxId: obj["id"],
+          maxIdPlayerName: obj["Player_Name"],
+          maxIdTeamName: obj["Team_Name"],
+          maxValue: obj["Gameweek_Points"],
+          maxIdGameWeek: index
+        };
+      }
+      return retObj;
+    }, { maxId: null, maxIdPlayerName: null, maxIdTeamName: null, maxValue: -Infinity, maxIdGameWeek: null });
+
+    console.log('!!!' + bestCaptainPick["maxIdGameWeek"]);
+
+    //most captained player
+    const {mostFrequent: MostCaptainedPlayerID, maxCount: FrequencyOfMostCaptainedPlayer} = 
+      findMostFrequent(weeklyCaptainData);
     
     const MostCaptainedPlayerName = playerData
       .filter((player) => player["id"] === +MostCaptainedPlayerID)
-      .map((player) => player["Player_Name"])[0];
-    
+      .map((player) => [{ "Player_Name": player["Player_Name"], "Team_Name": player["Team_Name"] }])[0];
+
+    //best week, worst week
     const best_week_points = Math.max.apply(
       Math,
       teamData["teamHistoryData"]["current"].map((gameweek) => {
@@ -72,13 +111,19 @@ export const CarouselCards = (props) => {
       })
     );
 
-    const worst_week_points = Math.min.apply(
+    //TODO: Remove this for next season
+    //Only for 2022/23 season we had GW7 without any games so skipping check on this GW
+    const removedGW7ForWorstWeekTeamData = teamData["teamHistoryData"]["current"]
+    .filter((gameweek) => gameweek["event"] !== 7);
+
+    const worst_week_points = Math.min.apply(  
       Math,
-      teamData["teamHistoryData"]["current"].map((gameweek) => {
+      removedGW7ForWorstWeekTeamData.map((gameweek) => {
         return gameweek["points"];
       })
     );
 
+    //best rank, worst rank and final rank
     const best_overall_rank = Math.min.apply(
       Math,
       teamData["teamHistoryData"]["current"].map((gameweek) => {
@@ -92,6 +137,12 @@ export const CarouselCards = (props) => {
         return gameweek["overall_rank"];
       })
     );
+
+    const final_overall_rank = teamData["teamHistoryData"]["current"]
+      .filter((obj, index) => index === teamData["teamHistoryData"]["current"].length - 1)
+      .map((gameweek) => {
+        return gameweek["overall_rank"];
+      });
 
     const best_week = teamData["teamHistoryData"]["current"]
       .filter((gameweek) => gameweek["points"] === best_week_points)
@@ -107,11 +158,19 @@ export const CarouselCards = (props) => {
       .map((gw) => [{ "Game Week": gw.event, Rank: gw.overall_rank }]);
 
     return {
+      Best_Captain_Pick: bestCaptainPick["maxIdPlayerName"],
+      Best_Captain_Pick_TeamName: bestCaptainPick["maxIdTeamName"],
+      Best_Captain_Pick_GameWeek: bestCaptainPick["maxIdGameWeek"],
+      Best_Captain_Pick_Points: bestCaptainPick["maxValue"],
+      Most_Captained_Player: MostCaptainedPlayerName[0].Player_Name,
+      Most_Captained_Player_Team_Name: MostCaptainedPlayerName[0].Team_Name,
+      Frequency_Of_Most_Captained_Player: FrequencyOfMostCaptainedPlayer,
       Best_Week: best_week[0],
       Worst_Week: worst_week[0],
       Best_Overall_Rank: best_rank[0],
       Worst_Overall_Rank: worst_rank[0],
-      Most_Captained_Player: MostCaptainedPlayerName,
+      Final_Overall_Rank: final_overall_rank,
+
     };
   };
 
@@ -121,33 +180,40 @@ export const CarouselCards = (props) => {
   return (
     <Slider {...settings} arrows style={{ paddingTop: "75px" }}>
       <div>
-        <BestCaptainPick />
+        <BestCaptainPick name={processedData[0]["Best_Captain_Pick"]}
+            teamName={processedData[0]["Best_Captain_Pick_TeamName"]}
+            gameWeek={processedData[0]["Best_Captain_Pick_GameWeek"]}
+            points={processedData[0]["Best_Captain_Pick_Points"]}
+        />
       </div>
       <div>
-        <MostCaptainedPlayer name={processedData[0]["Most_Captained_Player"]} />
+        <MostCaptainedPlayer name={processedData[0]["Most_Captained_Player"]} 
+            teamName={processedData[0]["Most_Captained_Player_Team_Name"]} 
+            frequency={processedData[0]["Frequency_Of_Most_Captained_Player"]}
+        />
       </div>
       <div>
-        <span>Best Week: {processedData[0]["Best_Week"][0]["Game Week"]}</span>
+        <span>Best Week: GW{processedData[0]["Best_Week"][0]["Game Week"]}</span>
         <br></br>
         <span>Points: {processedData[0]["Best_Week"][0]["Points"]}</span>
         <br></br>
-        <span>
-          Worst Week: {processedData[0]["Worst_Week"][0]["Game Week"]}
-        </span>
+        <span>Worst Week: GW{processedData[0]["Worst_Week"][0]["Game Week"]}</span>
         <br></br>
         <span>Points: {processedData[0]["Worst_Week"][0]["Points"]}</span>
         <br></br>
       </div>
       <div>
-        <span>
-          Best Rank: {processedData[0]["Best_Overall_Rank"][0]["Rank"]}
+        <span>Best Rank: {processedData[0]["Best_Overall_Rank"][0]["Rank"]}</span>
+        <br></br>
+        <span>GW: {processedData[0]["Best_Overall_Rank"][0]["Game Week"]}</span>
+        <br></br>
+        <span>Worst Rank: {processedData[0]["Worst_Overall_Rank"][0]["Rank"]}</span>
+        <br></br>
+        <span>GW: {processedData[0]["Worst_Overall_Rank"][0]["Game Week"]}</span>
+        <br></br>
+        <span>Final Rank: {processedData[0]["Final_Overall_Rank"]}
         </span>
         <br></br>
-        <span>
-          Worst Rank: {processedData[0]["Worst_Overall_Rank"][0]["Rank"]}
-        </span>
-        <br></br>
-        <span>Final Rank: </span>
       </div>
       <div>
         <CategoryAwards />

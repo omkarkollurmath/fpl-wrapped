@@ -42,7 +42,7 @@ const Home = () => {
                 <input
                     type='text'
                     placeholder={'1234567'}
-                    maxlength='10'
+                    maxLength='10'
                     onChange={handleTextChange}
                     autoComplete="off"
                     required
