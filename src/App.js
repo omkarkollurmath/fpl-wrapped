@@ -15,7 +15,7 @@ function App() {
           <Route exact path="/" Component={Home} />
         </Routes>
         <Routes>
-          <Route exact path=":id/summary" Component={Summary} />
+          <Route exact path=":teamId/summary" Component={Summary} />
         </Routes>
       </div>
       <Footer />
