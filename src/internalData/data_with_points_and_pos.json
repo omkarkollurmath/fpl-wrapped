@@ -131,7 +131,7 @@
     },
     {
       "id": 16,
-      "Player_Name": "Gabriel dos Santos Magalhães",
+      "Player_Name": "Gabriel",
       "Team_Name": "Arsenal",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -141,9 +141,9 @@
     },
     {
       "id": 17,
-      "Player_Name": "Nuno Varela Tavares",
+      "Player_Name": "Nuno Tavares",
       "Team_Name": "Arsenal",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -151,7 +151,7 @@
     },
     {
       "id": 19,
-      "Player_Name": "Gabriel Martinelli Silva",
+      "Player_Name": "Gabriel Martinelli",
       "Team_Name": "Arsenal",
       "Position": "MID",
       "Gameweek_Points": [
@@ -161,9 +161,9 @@
     },
     {
       "id": 20,
-      "Player_Name": "Pablo Marí Villar",
+      "Player_Name": "Pablo Marí",
       "Team_Name": "Arsenal",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -171,7 +171,7 @@
     },
     {
       "id": 22,
-      "Player_Name": "Lucas Torreira di Pascua",
+      "Player_Name": "Lucas Torreira",
       "Team_Name": "Arsenal",
       "Position": "MID",
       "Gameweek_Points": [
@@ -201,7 +201,7 @@
     },
     {
       "id": 25,
-      "Player_Name": "Fábio Ferreira Vieira",
+      "Player_Name": "Fábio Vieira",
       "Team_Name": "Arsenal",
       "Position": "MID",
       "Gameweek_Points": [
@@ -221,9 +221,9 @@
     },
     {
       "id": 27,
-      "Player_Name": "Marcus Oliveira Alencar",
+      "Player_Name": "Marquinhos",
       "Team_Name": "Arsenal",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -231,7 +231,7 @@
     },
     {
       "id": 28,
-      "Player_Name": "Gabriel Fernando de Jesus",
+      "Player_Name": "Gabriel Jesus",
       "Team_Name": "Arsenal",
       "Position": "FWD",
       "Gameweek_Points": [
@@ -251,9 +251,9 @@
     },
     {
       "id": 130,
-      "Player_Name": "Jorge Luiz Frello Filho",
+      "Player_Name": "Jorginho",
       "Team_Name": "Arsenal",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         11, 2, 2, 2, 2, 1, 1, 2, 1, 3, 8, 0, 2, 1, 3, 2, 0, 1, 2, 3, 1, 0, 2, 5,
         3, 1, 0, 0, 1, 1, 0
@@ -323,7 +323,7 @@
       "id": 685,
       "Player_Name": "Nathan Butler-Oyedeji",
       "Team_Name": "Arsenal",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0
@@ -351,7 +351,7 @@
     },
     {
       "id": 29,
-      "Player_Name": "Philippe Coutinho Correia",
+      "Player_Name": "Philippe Coutinho",
       "Team_Name": "Aston Villa",
       "Position": "MID",
       "Gameweek_Points": [
@@ -361,7 +361,7 @@
     },
     {
       "id": 31,
-      "Player_Name": "Emiliano Martínez Romero",
+      "Player_Name": "Emiliano Martínez",
       "Team_Name": "Aston Villa",
       "Position": "GK",
       "Gameweek_Points": [
@@ -413,7 +413,7 @@
       "id": 36,
       "Player_Name": "Morgan Sanson",
       "Team_Name": "Aston Villa",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -471,7 +471,7 @@
     },
     {
       "id": 42,
-      "Player_Name": "Emiliano Buendía Stati",
+      "Player_Name": "Emiliano Buendía",
       "Team_Name": "Aston Villa",
       "Position": "MID",
       "Gameweek_Points": [
@@ -491,7 +491,7 @@
     },
     {
       "id": 44,
-      "Player_Name": "Ezri Konsa Ngoyo",
+      "Player_Name": "Ezri Konsa",
       "Team_Name": "Aston Villa",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -511,7 +511,7 @@
     },
     {
       "id": 46,
-      "Player_Name": "Douglas Luiz Soares de Paulo",
+      "Player_Name": "Douglas Luiz",
       "Team_Name": "Aston Villa",
       "Position": "MID",
       "Gameweek_Points": [
@@ -533,7 +533,7 @@
       "id": 49,
       "Player_Name": "Tim Iroegbunam",
       "Team_Name": "Aston Villa",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -541,7 +541,7 @@
     },
     {
       "id": 50,
-      "Player_Name": "Diego Carlos Santos Silva",
+      "Player_Name": "Diego Carlos",
       "Team_Name": "Aston Villa",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -553,7 +553,7 @@
       "id": 51,
       "Player_Name": "Anwar El Ghazi",
       "Team_Name": "Aston Villa",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -563,7 +563,7 @@
       "id": 52,
       "Player_Name": "Keinan Davis",
       "Team_Name": "Aston Villa",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -583,7 +583,7 @@
       "id": 54,
       "Player_Name": "Cameron Archer",
       "Team_Name": "Aston Villa",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -593,7 +593,7 @@
       "id": 55,
       "Player_Name": "Jaden Philogene-Bidace",
       "Team_Name": "Aston Villa",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -603,7 +603,7 @@
       "id": 56,
       "Player_Name": "Frédéric Guilbert",
       "Team_Name": "Aston Villa",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -623,7 +623,7 @@
       "id": 525,
       "Player_Name": "Ludwig Augustinsson",
       "Team_Name": "Aston Villa",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -633,7 +633,7 @@
       "id": 537,
       "Player_Name": "Kaine Kesler Hayden",
       "Team_Name": "Aston Villa",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -653,7 +653,7 @@
       "id": 638,
       "Player_Name": "Lamare Bogarde",
       "Team_Name": "Aston Villa",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0
@@ -663,7 +663,7 @@
       "id": 670,
       "Player_Name": "Filip Marschall",
       "Team_Name": "Aston Villa",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0
@@ -681,7 +681,7 @@
     },
     {
       "id": 694,
-      "Player_Name": "Alexandre Moreno Lopera",
+      "Player_Name": "Alexandre Moreno",
       "Team_Name": "Aston Villa",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -793,7 +793,7 @@
       "id": 61,
       "Player_Name": "Jamal Lowe",
       "Team_Name": "Bournemouth",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -813,7 +813,7 @@
       "id": 63,
       "Player_Name": "Emiliano Marcondes",
       "Team_Name": "Bournemouth",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -821,7 +821,7 @@
     },
     {
       "id": 64,
-      "Player_Name": "Jefferson Lerma Solís",
+      "Player_Name": "Jefferson Lerma",
       "Team_Name": "Bournemouth",
       "Position": "MID",
       "Gameweek_Points": [
@@ -863,7 +863,7 @@
       "id": 68,
       "Player_Name": "Ben Pearson",
       "Team_Name": "Bournemouth",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         2, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -923,7 +923,7 @@
       "id": 74,
       "Player_Name": "Siriki Dembélé",
       "Team_Name": "Bournemouth",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -953,7 +953,7 @@
       "id": 77,
       "Player_Name": "Will Dennis",
       "Team_Name": "Bournemouth",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -993,7 +993,7 @@
       "id": 539,
       "Player_Name": "James Hill",
       "Team_Name": "Bournemouth",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1033,7 +1033,7 @@
       "id": 597,
       "Player_Name": "Christian Saydee",
       "Team_Name": "Bournemouth",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1043,7 +1043,7 @@
       "id": 598,
       "Player_Name": "Owen Bevan",
       "Team_Name": "Bournemouth",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1071,7 +1071,7 @@
     },
     {
       "id": 696,
-      "Player_Name": "Michael Dacosta Gonzalez",
+      "Player_Name": "Michael Dacosta",
       "Team_Name": "Bournemouth",
       "Position": "MID",
       "Gameweek_Points": [
@@ -1201,7 +1201,7 @@
     },
     {
       "id": 81,
-      "Player_Name": "David Raya Martin",
+      "Player_Name": "David Raya",
       "Team_Name": "Brentford",
       "Position": "GK",
       "Gameweek_Points": [
@@ -1211,7 +1211,7 @@
     },
     {
       "id": 82,
-      "Player_Name": "Sergi Canós Tenés",
+      "Player_Name": "Sergi Canós",
       "Team_Name": "Brentford",
       "Position": "MID",
       "Gameweek_Points": [
@@ -1291,7 +1291,7 @@
     },
     {
       "id": 90,
-      "Player_Name": "Mads Roerslev Rasmussen",
+      "Player_Name": "Mads Roerslev",
       "Team_Name": "Brentford",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -1301,9 +1301,9 @@
     },
     {
       "id": 91,
-      "Player_Name": "Mads Bech Sørensen",
+      "Player_Name": "Mads Bech",
       "Team_Name": "Brentford",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1353,7 +1353,7 @@
       "id": 96,
       "Player_Name": "Charlie Goode",
       "Team_Name": "Brentford",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1363,7 +1363,7 @@
       "id": 97,
       "Player_Name": "Marcus Forss",
       "Team_Name": "Brentford",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1373,7 +1373,7 @@
       "id": 98,
       "Player_Name": "Dominic Thompson",
       "Team_Name": "Brentford",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1383,7 +1383,7 @@
       "id": 99,
       "Player_Name": "Mads Bidstrup",
       "Team_Name": "Brentford",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1393,7 +1393,7 @@
       "id": 100,
       "Player_Name": "Ellery Balcombe",
       "Team_Name": "Brentford",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1453,7 +1453,7 @@
       "id": 541,
       "Player_Name": "Halil Dervişoğlu",
       "Team_Name": "Brentford",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1471,9 +1471,9 @@
     },
     {
       "id": 595,
-      "Player_Name": "Mathias Jorgensen",
+      "Player_Name": "Zanka",
       "Team_Name": "Brentford",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 2, 2, 1, 0, 1, 0, 0, 6, 0, 0, -1, 2, 1, 6, 1, 1, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 1
@@ -1643,7 +1643,7 @@
       "id": 115,
       "Player_Name": "Steven Alzate",
       "Team_Name": "Brighton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0
@@ -1673,7 +1673,7 @@
       "id": 118,
       "Player_Name": "Enock Mwepu",
       "Team_Name": "Brighton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         1, 1, 1, 1, 2, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0
@@ -1681,7 +1681,7 @@
     },
     {
       "id": 119,
-      "Player_Name": "Jeremy Sarmiento Morante",
+      "Player_Name": "Jeremy Sarmiento",
       "Team_Name": "Brighton",
       "Position": "MID",
       "Gameweek_Points": [
@@ -1691,7 +1691,7 @@
     },
     {
       "id": 120,
-      "Player_Name": "Moisés Caicedo Corozo",
+      "Player_Name": "Moisés Caicedo",
       "Team_Name": "Brighton",
       "Position": "MID",
       "Gameweek_Points": [
@@ -1703,7 +1703,7 @@
       "id": 121,
       "Player_Name": "Taylor Richards",
       "Team_Name": "Brighton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0
@@ -1713,7 +1713,7 @@
       "id": 122,
       "Player_Name": "Haydon Roberts",
       "Team_Name": "Brighton",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0
@@ -1753,7 +1753,7 @@
       "id": 126,
       "Player_Name": "Kacper Kozłowski",
       "Team_Name": "Brighton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0
@@ -1773,7 +1773,7 @@
       "id": 542,
       "Player_Name": "Kjell Scherpen",
       "Team_Name": "Brighton",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0
@@ -1783,7 +1783,7 @@
       "id": 543,
       "Player_Name": "Matt Clarke",
       "Team_Name": "Brighton",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0
@@ -1791,7 +1791,7 @@
     },
     {
       "id": 544,
-      "Player_Name": "Jan Paul van Hecke",
+      "Player_Name": "JanPaul van Hecke",
       "Team_Name": "Brighton",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -1833,7 +1833,7 @@
       "id": 640,
       "Player_Name": "Ed Turns",
       "Team_Name": "Brighton",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1853,7 +1853,7 @@
       "id": 652,
       "Player_Name": "James Furlong",
       "Team_Name": "Brighton",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -1911,7 +1911,7 @@
     },
     {
       "id": 112,
-      "Player_Name": "Marc Cucurella Saseta",
+      "Player_Name": "Marc Cucurella",
       "Team_Name": "Chelsea",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -1931,7 +1931,7 @@
     },
     {
       "id": 128,
-      "Player_Name": "Thiago Emiliano da Silva",
+      "Player_Name": "Thiago Silva",
       "Team_Name": "Chelsea",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -2013,7 +2013,7 @@
       "id": 137,
       "Player_Name": "Timo Werner",
       "Team_Name": "Chelsea",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2021,9 +2021,9 @@
     },
     {
       "id": 138,
-      "Player_Name": "Robert Kenedy Nunes do Nascimento",
+      "Player_Name": "Robert Kenedy",
       "Team_Name": "Chelsea",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2073,7 +2073,7 @@
       "id": 143,
       "Player_Name": "Malang Sarr",
       "Team_Name": "Chelsea",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2083,7 +2083,7 @@
       "id": 144,
       "Player_Name": "Callum Hudson-Odoi",
       "Team_Name": "Chelsea",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2143,7 +2143,7 @@
       "id": 151,
       "Player_Name": "Ethan Ampadu",
       "Team_Name": "Chelsea",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2183,7 +2183,7 @@
       "id": 606,
       "Player_Name": "Harvey Vale",
       "Team_Name": "Chelsea",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2243,7 +2243,7 @@
       "id": 673,
       "Player_Name": "Bashir Humphreys",
       "Team_Name": "Chelsea",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0
@@ -2251,7 +2251,7 @@
     },
     {
       "id": 684,
-      "Player_Name": "David Datro Fofana",
+      "Player_Name": "David Fofana",
       "Team_Name": "Chelsea",
       "Position": "FWD",
       "Gameweek_Points": [
@@ -2271,7 +2271,7 @@
     },
     {
       "id": 690,
-      "Player_Name": "João Félix Sequeira",
+      "Player_Name": "João Félix",
       "Team_Name": "Chelsea",
       "Position": "FWD",
       "Gameweek_Points": [
@@ -2291,9 +2291,9 @@
     },
     {
       "id": 702,
-      "Player_Name": "Andrey Nascimento dos Santos",
+      "Player_Name": "AndreySantos",
       "Team_Name": "Chelsea",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0
@@ -2363,7 +2363,7 @@
       "id": 155,
       "Player_Name": "Christian Benteke",
       "Team_Name": "Crystal Palace",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2523,7 +2523,7 @@
       "id": 172,
       "Player_Name": "Jesurun Rak-Sakyi",
       "Team_Name": "Crystal Palace",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2533,7 +2533,7 @@
       "id": 173,
       "Player_Name": "Malcolm Ebiowei",
       "Team_Name": "Crystal Palace",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2563,7 +2563,7 @@
       "id": 495,
       "Player_Name": "Remi Matthews",
       "Team_Name": "Crystal Palace",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2573,7 +2573,7 @@
       "id": 496,
       "Player_Name": "Luke Plange",
       "Team_Name": "Crystal Palace",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2623,7 +2623,7 @@
       "id": 604,
       "Player_Name": "Killian Phillips",
       "Team_Name": "Crystal Palace",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2633,7 +2633,7 @@
       "id": 634,
       "Player_Name": "John-Kymani Gordon",
       "Team_Name": "Crystal Palace",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0
@@ -2713,7 +2713,7 @@
       "id": 177,
       "Player_Name": "Salomón Rondón",
       "Team_Name": "Everton",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2753,7 +2753,7 @@
       "id": 181,
       "Player_Name": "Dele Alli",
       "Team_Name": "Everton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2771,7 +2771,7 @@
     },
     {
       "id": 183,
-      "Player_Name": "Allan Marques Loureiro",
+      "Player_Name": "Allan",
       "Team_Name": "Everton",
       "Position": "MID",
       "Gameweek_Points": [
@@ -2781,9 +2781,9 @@
     },
     {
       "id": 184,
-      "Player_Name": "André Tavares Gomes",
+      "Player_Name": "André Gomes",
       "Team_Name": "Everton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2813,7 +2813,7 @@
       "id": 187,
       "Player_Name": "Jean-Philippe Gbamin",
       "Team_Name": "Everton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2893,7 +2893,7 @@
       "id": 196,
       "Player_Name": "Jarrad Branthwaite",
       "Team_Name": "Everton",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2913,7 +2913,7 @@
       "id": 198,
       "Player_Name": "Niels Nkounkou",
       "Team_Name": "Everton",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -2941,7 +2941,7 @@
     },
     {
       "id": 531,
-      "Player_Name": "Rúben Nascimento Vinagre",
+      "Player_Name": "Rúben Vinagre",
       "Team_Name": "Everton",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -2973,7 +2973,7 @@
       "id": 561,
       "Player_Name": "Lewis Warrington",
       "Team_Name": "Everton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -3023,7 +3023,7 @@
       "id": 627,
       "Player_Name": "Eldin Jakupovic",
       "Team_Name": "Everton",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0
@@ -3043,7 +3043,7 @@
       "id": 662,
       "Player_Name": "Thomas Cannon",
       "Team_Name": "Everton",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0
@@ -3123,7 +3123,7 @@
       "id": 202,
       "Player_Name": "Anthony Knockaert",
       "Team_Name": "Fulham",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -3133,7 +3133,7 @@
       "id": 203,
       "Player_Name": "Nathaniel Chalobah",
       "Team_Name": "Fulham",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 1, 1, 0, 0, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -3163,7 +3163,7 @@
       "id": 206,
       "Player_Name": "Joe Bryan",
       "Team_Name": "Fulham",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -3171,9 +3171,9 @@
     },
     {
       "id": 207,
-      "Player_Name": "Paulo Gazzaniga Farias",
+      "Player_Name": "Paulo Gazzaniga",
       "Team_Name": "Fulham",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -3183,7 +3183,7 @@
       "id": 208,
       "Player_Name": "Terence Kongolo",
       "Team_Name": "Fulham",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -3241,9 +3241,9 @@
     },
     {
       "id": 214,
-      "Player_Name": "Ivan Neves Abreu Cavaleiro",
+      "Player_Name": "Ivan Cavaleiro",
       "Team_Name": "Fulham",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -3263,7 +3263,7 @@
       "id": 216,
       "Player_Name": "Josh Onomah",
       "Team_Name": "Fulham",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -3281,9 +3281,9 @@
     },
     {
       "id": 218,
-      "Player_Name": "Rodrigo Muniz Carvalho",
+      "Player_Name": "Rodrigo Muniz",
       "Team_Name": "Fulham",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -3293,7 +3293,7 @@
       "id": 219,
       "Player_Name": "Jay Stansfield",
       "Team_Name": "Fulham",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 1, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -3301,7 +3301,7 @@
     },
     {
       "id": 220,
-      "Player_Name": "João Palhinha Gonçalves",
+      "Player_Name": "João Palhinha",
       "Team_Name": "Fulham",
       "Position": "MID",
       "Gameweek_Points": [
@@ -3321,7 +3321,7 @@
     },
     {
       "id": 346,
-      "Player_Name": "Andreas Hoelgebaum Pereira",
+      "Player_Name": "Andreas Pereira",
       "Team_Name": "Fulham",
       "Position": "MID",
       "Gameweek_Points": [
@@ -3343,7 +3343,7 @@
       "id": 521,
       "Player_Name": "Tyrese Francois",
       "Team_Name": "Fulham",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -3353,7 +3353,7 @@
       "id": 532,
       "Player_Name": "Kevin Mbabu",
       "Team_Name": "Fulham",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 1, 3, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -3401,7 +3401,7 @@
     },
     {
       "id": 614,
-      "Player_Name": "Willian Borges da Silva",
+      "Player_Name": "Willian",
       "Team_Name": "Fulham",
       "Position": "MID",
       "Gameweek_Points": [
@@ -3411,7 +3411,7 @@
     },
     {
       "id": 618,
-      "Player_Name": "Carlos Vinícius Alves Morais",
+      "Player_Name": "Carlos Vinícius",
       "Team_Name": "Fulham",
       "Position": "FWD",
       "Gameweek_Points": [
@@ -3483,7 +3483,7 @@
       "id": 248,
       "Player_Name": "Kasper Schmeichel",
       "Team_Name": "Leicester",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -3513,7 +3513,7 @@
       "id": 251,
       "Player_Name": "Marc Albrighton",
       "Team_Name": "Leicester",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 2, 2, 6, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -3561,7 +3561,7 @@
     },
     {
       "id": 256,
-      "Player_Name": "Ricardo Barbosa Pereira",
+      "Player_Name": "Ricardo Pereira",
       "Team_Name": "Leicester",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -3633,7 +3633,7 @@
       "id": 263,
       "Player_Name": "Hamza Choudhury",
       "Team_Name": "Leicester",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -3793,7 +3793,7 @@
       "id": 687,
       "Player_Name": "Kasey McAteer",
       "Team_Name": "Leicester",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0
@@ -3803,7 +3803,7 @@
       "id": 709,
       "Player_Name": "Victor Kristiansen",
       "Team_Name": "Leicester",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 1, 2,
         0, 0, 0, 0, 1, 2
@@ -3823,7 +3823,7 @@
       "id": 727,
       "Player_Name": "Harry Souttar",
       "Team_Name": "Leicester",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 4, 1,
         2, 2, 1, 2, 0, 1, 0
@@ -3833,7 +3833,7 @@
       "id": 735,
       "Player_Name": "Wanya Marçal-Madivadua",
       "Team_Name": "Leicester",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0
@@ -3863,7 +3863,7 @@
       "id": 223,
       "Player_Name": "Mateusz Klich",
       "Team_Name": "Leeds",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -3881,7 +3881,7 @@
     },
     {
       "id": 225,
-      "Player_Name": "Rodrigo Moreno",
+      "Player_Name": "Rodrigo",
       "Team_Name": "Leeds",
       "Position": "MID",
       "Gameweek_Points": [
@@ -3913,7 +3913,7 @@
       "id": 228,
       "Player_Name": "Diego Llorente",
       "Team_Name": "Leeds",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         2, 1, 8, 2, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -3923,7 +3923,7 @@
       "id": 229,
       "Player_Name": "Tyler Roberts",
       "Team_Name": "Leeds",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -3941,9 +3941,9 @@
     },
     {
       "id": 232,
-      "Player_Name": "Raphael Dias Belloli",
+      "Player_Name": "Raphinha",
       "Team_Name": "Leeds",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -3963,7 +3963,7 @@
       "id": 234,
       "Player_Name": "Jamie Shackleton",
       "Team_Name": "Leeds",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -4033,7 +4033,7 @@
       "id": 241,
       "Player_Name": "Lewis Bate",
       "Team_Name": "Leeds",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -4043,7 +4043,7 @@
       "id": 242,
       "Player_Name": "Joe Gelhardt",
       "Team_Name": "Leeds",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 4, 0, 0, 1, 1, 1, 1, 4, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -4053,7 +4053,7 @@
       "id": 243,
       "Player_Name": "Leo Fuhr Hjelde",
       "Team_Name": "Leeds",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -4071,7 +4071,7 @@
     },
     {
       "id": 245,
-      "Player_Name": "Marc Roca Junqué",
+      "Player_Name": "Marc Roca",
       "Team_Name": "Leeds",
       "Position": "MID",
       "Gameweek_Points": [
@@ -4111,7 +4111,7 @@
     },
     {
       "id": 508,
-      "Player_Name": "Luis Sinisterra Lucumí",
+      "Player_Name": "Luis Sinisterra",
       "Team_Name": "Leeds",
       "Position": "MID",
       "Gameweek_Points": [
@@ -4123,7 +4123,7 @@
       "id": 547,
       "Player_Name": "Cody Drameh",
       "Team_Name": "Leeds",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -4161,7 +4161,7 @@
     },
     {
       "id": 659,
-      "Player_Name": "Mateo Joseph Fernández",
+      "Player_Name": "Mateo Joseph",
       "Team_Name": "Leeds",
       "Position": "FWD",
       "Gameweek_Points": [
@@ -4221,7 +4221,7 @@
     },
     {
       "id": 743,
-      "Player_Name": "Diogo Pinheiro Monteiro",
+      "Player_Name": "Diogo Monteiro",
       "Team_Name": "Leeds",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -4261,7 +4261,7 @@
     },
     {
       "id": 277,
-      "Player_Name": "Thiago Alcántara do Nascimento",
+      "Player_Name": "Thiago-Alcántara",
       "Team_Name": "Liverpool",
       "Position": "MID",
       "Gameweek_Points": [
@@ -4301,7 +4301,7 @@
     },
     {
       "id": 281,
-      "Player_Name": "Alisson Ramses Becker",
+      "Player_Name": "Alisson",
       "Team_Name": "Liverpool",
       "Position": "GK",
       "Gameweek_Points": [
@@ -4311,9 +4311,9 @@
     },
     {
       "id": 282,
-      "Player_Name": "Fabio Henrique Tavares",
+      "Player_Name": "Fabinho",
       "Team_Name": "Liverpool",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         1, 2, 1, 3, 2, 2, 2, 1, 2, 1, 2, 2, 2, 2, 2, 0, 2, 2, 1, 0, 3, 2, 0, 2, 2,
         2, 2, 2, 1
@@ -4371,9 +4371,9 @@
     },
     {
       "id": 288,
-      "Player_Name": "Diogo Teixeira da Silva",
+      "Player_Name": "Diogo Jota",
       "Team_Name": "Liverpool",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 1, 1, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 5, 1,
         1, 5, 2, 2
@@ -4441,7 +4441,7 @@
     },
     {
       "id": 296,
-      "Player_Name": "Fábio Freitas Gouveia Carvalho",
+      "Player_Name": "Fábio Carvalho",
       "Team_Name": "Liverpool",
       "Position": "MID",
       "Gameweek_Points": [
@@ -4451,7 +4451,7 @@
     },
     {
       "id": 297,
-      "Player_Name": "Darwin Núñez Ribeiro",
+      "Player_Name": "Darwin Núñez",
       "Team_Name": "Liverpool",
       "Position": "FWD",
       "Gameweek_Points": [
@@ -4471,7 +4471,7 @@
     },
     {
       "id": 497,
-      "Player_Name": "Adrián San Miguel del Castillo",
+      "Player_Name": "Adrián",
       "Team_Name": "Liverpool",
       "Position": "GK",
       "Gameweek_Points": [
@@ -4481,9 +4481,9 @@
     },
     {
       "id": 498,
-      "Player_Name": "Rhys Williams",
+      "Player_Name": "Rhys-Williams",
       "Team_Name": "Liverpool",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -4493,7 +4493,7 @@
       "id": 499,
       "Player_Name": "Ben Davies",
       "Team_Name": "Liverpool",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -4503,7 +4503,7 @@
       "id": 500,
       "Player_Name": "Sepp van den Berg",
       "Team_Name": "Liverpool",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -4523,7 +4523,7 @@
       "id": 563,
       "Player_Name": "Luke Chambers",
       "Team_Name": "Liverpool",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -4561,7 +4561,7 @@
     },
     {
       "id": 620,
-      "Player_Name": "Arthur Henrique Ramos de Oliveira Melo",
+      "Player_Name": "Arthur",
       "Team_Name": "Liverpool",
       "Position": "MID",
       "Gameweek_Points": [
@@ -4661,7 +4661,7 @@
     },
     {
       "id": 307,
-      "Player_Name": "Ederson Santana de Moraes",
+      "Player_Name": "Ederson",
       "Team_Name": "Man City",
       "Position": "GK",
       "Gameweek_Points": [
@@ -4701,7 +4701,7 @@
     },
     {
       "id": 311,
-      "Player_Name": "Bernardo Veiga de Carvalho e Silva",
+      "Player_Name": "Bernardo",
       "Team_Name": "Man City",
       "Position": "MID",
       "Gameweek_Points": [
@@ -4711,7 +4711,7 @@
     },
     {
       "id": 312,
-      "Player_Name": "Rúben Gato Alves Dias",
+      "Player_Name": "Rúben Dias",
       "Team_Name": "Man City",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -4753,7 +4753,7 @@
       "id": 317,
       "Player_Name": "James McAtee",
       "Team_Name": "Man City",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -4781,9 +4781,9 @@
     },
     {
       "id": 320,
-      "Player_Name": "Luke Mbete-Tabu",
+      "Player_Name": "Luke Mbete",
       "Team_Name": "Man City",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -4793,7 +4793,7 @@
       "id": 322,
       "Player_Name": "Josh Wilson-Esbrand",
       "Team_Name": "Man City",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -4803,7 +4803,7 @@
       "id": 323,
       "Player_Name": "Liam Delap",
       "Team_Name": "Man City",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -4811,7 +4811,7 @@
     },
     {
       "id": 324,
-      "Player_Name": "Stefan Ortega Moreno",
+      "Player_Name": "Stefan Ortega",
       "Team_Name": "Man City",
       "Position": "GK",
       "Gameweek_Points": [
@@ -4863,7 +4863,7 @@
       "id": 599,
       "Player_Name": "Claudio Gomes",
       "Team_Name": "Man City",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -4911,7 +4911,7 @@
     },
     {
       "id": 326,
-      "Player_Name": "Cristiano Ronaldo dos Santos Aveiro",
+      "Player_Name": "Cristiano Ronaldo",
       "Team_Name": "Man Utd",
       "Position": "FWD",
       "Gameweek_Points": [
@@ -4921,7 +4921,7 @@
     },
     {
       "id": 327,
-      "Player_Name": "David De Gea Quintana",
+      "Player_Name": "David De Gea",
       "Team_Name": "Man Utd",
       "Position": "GK",
       "Gameweek_Points": [
@@ -4961,7 +4961,7 @@
     },
     {
       "id": 331,
-      "Player_Name": "Frederico Rodrigues de Paula Santos",
+      "Player_Name": "Fred",
       "Team_Name": "Man Utd",
       "Position": "MID",
       "Gameweek_Points": [
@@ -4981,7 +4981,7 @@
     },
     {
       "id": 333,
-      "Player_Name": "Bruno Borges Fernandes",
+      "Player_Name": "Bruno Fernandes",
       "Team_Name": "Man Utd",
       "Position": "MID",
       "Gameweek_Points": [
@@ -5071,7 +5071,7 @@
     },
     {
       "id": 342,
-      "Player_Name": "Diogo Dalot Teixeira",
+      "Player_Name": "Diogo Dalot",
       "Team_Name": "Man Utd",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -5111,7 +5111,7 @@
     },
     {
       "id": 347,
-      "Player_Name": "Facundo Pellistri Rebollo",
+      "Player_Name": "Facundo Pellistri",
       "Team_Name": "Man Utd",
       "Position": "MID",
       "Gameweek_Points": [
@@ -5161,9 +5161,9 @@
     },
     {
       "id": 550,
-      "Player_Name": "Amad Diallo",
+      "Player_Name": "Amad",
       "Team_Name": "Man Utd",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -5191,7 +5191,7 @@
     },
     {
       "id": 593,
-      "Player_Name": "Carlos Henrique Casimiro",
+      "Player_Name": "Casemiro",
       "Team_Name": "Man Utd",
       "Position": "MID",
       "Gameweek_Points": [
@@ -5201,7 +5201,7 @@
     },
     {
       "id": 609,
-      "Player_Name": "Antony Matheus dos Santos",
+      "Player_Name": "Antony",
       "Team_Name": "Man Utd",
       "Position": "MID",
       "Gameweek_Points": [
@@ -5213,7 +5213,7 @@
       "id": 615,
       "Player_Name": "Matej Kovár",
       "Team_Name": "Man Utd",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -5303,7 +5303,7 @@
       "id": 351,
       "Player_Name": "Federico Fernández",
       "Team_Name": "Newcastle",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -5313,7 +5313,7 @@
       "id": 352,
       "Player_Name": "Ciaran Clark",
       "Team_Name": "Newcastle",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -5323,7 +5323,7 @@
       "id": 353,
       "Player_Name": "Karl Darlow",
       "Team_Name": "Newcastle",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -5393,7 +5393,7 @@
       "id": 361,
       "Player_Name": "Dwight Gayle",
       "Team_Name": "Newcastle",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -5411,7 +5411,7 @@
     },
     {
       "id": 363,
-      "Player_Name": "Javier Manquillo Gaitán",
+      "Player_Name": "Javier Manquillo",
       "Team_Name": "Newcastle",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -5471,7 +5471,7 @@
     },
     {
       "id": 369,
-      "Player_Name": "Miguel Almirón Rejala",
+      "Player_Name": "Miguel Almirón",
       "Team_Name": "Newcastle",
       "Position": "MID",
       "Gameweek_Points": [
@@ -5491,7 +5491,7 @@
     },
     {
       "id": 371,
-      "Player_Name": "Joelinton Cássio Apolinário de Lira",
+      "Player_Name": "Joelinton",
       "Team_Name": "Newcastle",
       "Position": "MID",
       "Gameweek_Points": [
@@ -5521,7 +5521,7 @@
     },
     {
       "id": 374,
-      "Player_Name": "Bruno Guimarães Rodriguez Moura",
+      "Player_Name": "Bruno Guimarães",
       "Team_Name": "Newcastle",
       "Position": "MID",
       "Gameweek_Points": [
@@ -5533,7 +5533,7 @@
       "id": 375,
       "Player_Name": "Jeff Hendrick",
       "Team_Name": "Newcastle",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -5603,7 +5603,7 @@
       "id": 683,
       "Player_Name": "Garang Kuol",
       "Team_Name": "Newcastle",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -5693,7 +5693,7 @@
       "id": 382,
       "Player_Name": "Brice Samba",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -5701,9 +5701,9 @@
     },
     {
       "id": 383,
-      "Player_Name": "Carlos Ribeiro Dias",
+      "Player_Name": "Cafu",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -5713,7 +5713,7 @@
       "id": 384,
       "Player_Name": "Joe Lolley",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -5733,7 +5733,7 @@
       "id": 386,
       "Player_Name": "Mohamed Dräger",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -5763,7 +5763,7 @@
       "id": 389,
       "Player_Name": "Jonathan Panzo",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -5771,9 +5771,9 @@
     },
     {
       "id": 390,
-      "Player_Name": "Xande Nascimento da Costa Silva",
+      "Player_Name": "Xande-Silva",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -5793,7 +5793,7 @@
       "id": 392,
       "Player_Name": "Richie Laryea",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -5803,7 +5803,7 @@
       "id": 393,
       "Player_Name": "Loïc Mbe Soh",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -5823,7 +5823,7 @@
       "id": 395,
       "Player_Name": "Alex Mighten",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -5831,9 +5831,9 @@
     },
     {
       "id": 396,
-      "Player_Name": "Braian Ojeda Rodríguez",
+      "Player_Name": "Braian Ojeda",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -5903,7 +5903,7 @@
       "id": 511,
       "Player_Name": "Omar Richards",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6001,7 +6001,7 @@
     },
     {
       "id": 602,
-      "Player_Name": "Renan Augusto Lodi dos Santos",
+      "Player_Name": "Renan Lodi",
       "Team_Name": "Nott'm Forest",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -6013,7 +6013,7 @@
       "id": 621,
       "Player_Name": "Loïc Badé",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6033,7 +6033,7 @@
       "id": 666,
       "Player_Name": "Dale Taylor",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0
@@ -6043,7 +6043,7 @@
       "id": 675,
       "Player_Name": "Jordan Smith",
       "Team_Name": "Nott'm Forest",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0
@@ -6051,7 +6051,7 @@
     },
     {
       "id": 681,
-      "Player_Name": "Gustavo Henrique Furtado Scarpa",
+      "Player_Name": "Gustavo Scarpa",
       "Team_Name": "Nott'm Forest",
       "Position": "MID",
       "Gameweek_Points": [
@@ -6061,7 +6061,7 @@
     },
     {
       "id": 703,
-      "Player_Name": "Danilo dos Santos de Oliveira",
+      "Player_Name": "Danilo",
       "Team_Name": "Nott'm Forest",
       "Position": "MID",
       "Gameweek_Points": [
@@ -6081,7 +6081,7 @@
     },
     {
       "id": 730,
-      "Player_Name": "Felipe Augusto de Almeida Monteiro",
+      "Player_Name": "Felipe",
       "Team_Name": "Nott'm Forest",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -6151,9 +6151,9 @@
     },
     {
       "id": 402,
-      "Player_Name": "Oriol Romeu Vidal",
+      "Player_Name": "Oriol Romeu",
       "Team_Name": "Southampton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6163,7 +6163,7 @@
       "id": 403,
       "Player_Name": "Nathan Redmond",
       "Team_Name": "Southampton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6243,7 +6243,7 @@
       "id": 412,
       "Player_Name": "Nathan Tella",
       "Team_Name": "Southampton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6251,7 +6251,7 @@
     },
     {
       "id": 413,
-      "Player_Name": "Lyanco Silveira Neves Vojnovic",
+      "Player_Name": "Lyanco",
       "Team_Name": "Southampton",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -6263,7 +6263,7 @@
       "id": 414,
       "Player_Name": "Yan Valery",
       "Team_Name": "Southampton",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6273,7 +6273,7 @@
       "id": 415,
       "Player_Name": "Will Smallbone",
       "Team_Name": "Southampton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6333,7 +6333,7 @@
       "id": 421,
       "Player_Name": "Mateusz Lis",
       "Team_Name": "Southampton",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6391,7 +6391,7 @@
     },
     {
       "id": 622,
-      "Player_Name": "Juan Larios López",
+      "Player_Name": "Juan Larios",
       "Team_Name": "Southampton",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -6423,7 +6423,7 @@
       "id": 647,
       "Player_Name": "Lewis Payne",
       "Team_Name": "Southampton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0
@@ -6433,7 +6433,7 @@
       "id": 648,
       "Player_Name": "Ryan Finnigan",
       "Team_Name": "Southampton",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0
@@ -6561,7 +6561,7 @@
     },
     {
       "id": 431,
-      "Player_Name": "Lucas Rodrigues Moura da Silva",
+      "Player_Name": "Lucas",
       "Team_Name": "Spurs",
       "Position": "MID",
       "Gameweek_Points": [
@@ -6623,7 +6623,7 @@
       "id": 437,
       "Player_Name": "Steven Bergwijn",
       "Team_Name": "Spurs",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6633,7 +6633,7 @@
       "id": 438,
       "Player_Name": "Sergio Reguilón",
       "Team_Name": "Spurs",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6673,7 +6673,7 @@
       "id": 442,
       "Player_Name": "Joe Rodon",
       "Team_Name": "Spurs",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6701,7 +6701,7 @@
     },
     {
       "id": 445,
-      "Player_Name": "Emerson Leite de Souza Junior",
+      "Player_Name": "Emerson",
       "Team_Name": "Spurs",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -6723,7 +6723,7 @@
       "id": 447,
       "Player_Name": "Dane Scarlett",
       "Team_Name": "Spurs",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6743,7 +6743,7 @@
       "id": 449,
       "Player_Name": "Harvey White",
       "Team_Name": "Spurs",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6783,7 +6783,7 @@
       "id": 453,
       "Player_Name": "Troy Parrott",
       "Team_Name": "Spurs",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6791,7 +6791,7 @@
     },
     {
       "id": 454,
-      "Player_Name": "Richarlison de Andrade",
+      "Player_Name": "Richarlison",
       "Team_Name": "Spurs",
       "Position": "FWD",
       "Gameweek_Points": [
@@ -6813,7 +6813,7 @@
       "id": 522,
       "Player_Name": "Djed Spence",
       "Team_Name": "Spurs",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6821,9 +6821,9 @@
     },
     {
       "id": 554,
-      "Player_Name": "Bryan Gil Salvatierra",
+      "Player_Name": "Bryan Gil",
       "Team_Name": "Spurs",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 5, 1, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -6933,7 +6933,7 @@
       "id": 462,
       "Player_Name": "Arthur Masuaku",
       "Team_Name": "West Ham",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -7001,7 +7001,7 @@
     },
     {
       "id": 469,
-      "Player_Name": "Pablo Fornals Malla",
+      "Player_Name": "Pablo Fornals",
       "Team_Name": "West Ham",
       "Position": "MID",
       "Gameweek_Points": [
@@ -7061,7 +7061,7 @@
     },
     {
       "id": 545,
-      "Player_Name": "Emerson Palmieri dos Santos",
+      "Player_Name": "Emerson-Palmieri",
       "Team_Name": "West Ham",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -7073,7 +7073,7 @@
       "id": 556,
       "Player_Name": "Conor Coventry",
       "Team_Name": "West Ham",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -7083,7 +7083,7 @@
       "id": 572,
       "Player_Name": "Armstrong Oko-Flex",
       "Team_Name": "West Ham",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0
@@ -7111,9 +7111,9 @@
     },
     {
       "id": 603,
-      "Player_Name": "Lucas Tolentino Coelho de Lima",
+      "Player_Name": "Lucas Paquetá",
       "Team_Name": "West Ham",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 2, 2, 3, 8, 2, 0, 0, 0, 5, 1, 2, 2, 8, 2, 2, 10, 1, 0, 3,
         2, 4, 3, 2, 0
@@ -7181,7 +7181,7 @@
     },
     {
       "id": 477,
-      "Player_Name": "Jonathan Castro Otto",
+      "Player_Name": "Jonny",
       "Team_Name": "Wolves",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -7191,7 +7191,7 @@
     },
     {
       "id": 478,
-      "Player_Name": "José Malheiro de Sá",
+      "Player_Name": "José Sá",
       "Team_Name": "Wolves",
       "Position": "GK",
       "Gameweek_Points": [
@@ -7201,7 +7201,7 @@
     },
     {
       "id": 480,
-      "Player_Name": "Rúben da Silva Neves",
+      "Player_Name": "Rúben Neves",
       "Team_Name": "Wolves",
       "Position": "MID",
       "Gameweek_Points": [
@@ -7221,7 +7221,7 @@
     },
     {
       "id": 482,
-      "Player_Name": "Nélson Cabral Semedo",
+      "Player_Name": "Nélson Semedo",
       "Team_Name": "Wolves",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -7231,7 +7231,7 @@
     },
     {
       "id": 483,
-      "Player_Name": "Daniel Castelo Podence",
+      "Player_Name": "Daniel Podence",
       "Team_Name": "Wolves",
       "Position": "MID",
       "Gameweek_Points": [
@@ -7253,7 +7253,7 @@
       "id": 485,
       "Player_Name": "Luke Cundle",
       "Team_Name": "Wolves",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -7261,7 +7261,7 @@
     },
     {
       "id": 486,
-      "Player_Name": "Pedro Lomba Neto",
+      "Player_Name": "Pedro Neto",
       "Team_Name": "Wolves",
       "Position": "MID",
       "Gameweek_Points": [
@@ -7281,9 +7281,9 @@
     },
     {
       "id": 488,
-      "Player_Name": "Fabio Silva",
+      "Player_Name": "Fabio-Silva",
       "Team_Name": "Wolves",
-      "Position": "NA",
+      "Position": "FWD",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -7291,7 +7291,7 @@
     },
     {
       "id": 489,
-      "Player_Name": "Toti António Gomes",
+      "Player_Name": "Toti",
       "Team_Name": "Wolves",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -7301,7 +7301,7 @@
     },
     {
       "id": 490,
-      "Player_Name": "Francisco Jorge Tomás Oliveira",
+      "Player_Name": "Chiquinho",
       "Team_Name": "Wolves",
       "Position": "MID",
       "Gameweek_Points": [
@@ -7311,7 +7311,7 @@
     },
     {
       "id": 491,
-      "Player_Name": "Adama Traoré Diarra",
+      "Player_Name": "Adama Traoré  ",
       "Team_Name": "Wolves",
       "Position": "MID",
       "Gameweek_Points": [
@@ -7323,7 +7323,7 @@
       "id": 492,
       "Player_Name": "Matija Šarkić",
       "Team_Name": "Wolves",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -7331,9 +7331,9 @@
     },
     {
       "id": 494,
-      "Player_Name": "Yerson Mosquera Valdelamar",
+      "Player_Name": "Yerson Mosquera",
       "Team_Name": "Wolves",
-      "Position": "NA",
+      "Position": "DEF",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -7341,7 +7341,7 @@
     },
     {
       "id": 503,
-      "Player_Name": "João Filipe Iria Santos Moutinho",
+      "Player_Name": "João Moutinho",
       "Team_Name": "Wolves",
       "Position": "MID",
       "Gameweek_Points": [
@@ -7363,7 +7363,7 @@
       "id": 557,
       "Player_Name": "Jackson Smith",
       "Team_Name": "Wolves",
-      "Position": "NA",
+      "Position": "GK",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -7371,7 +7371,7 @@
     },
     {
       "id": 558,
-      "Player_Name": "Hugo Bueno López",
+      "Player_Name": "Hugo Bueno",
       "Team_Name": "Wolves",
       "Position": "DEF",
       "Gameweek_Points": [
@@ -7393,7 +7393,7 @@
       "id": 567,
       "Player_Name": "Connor Ronan",
       "Team_Name": "Wolves",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -7403,7 +7403,7 @@
       "id": 568,
       "Player_Name": "Chem Campbell",
       "Team_Name": "Wolves",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -7411,9 +7411,9 @@
     },
     {
       "id": 579,
-      "Player_Name": "Gonçalo Manuel Ganchinho Guedes",
+      "Player_Name": "Gonçalo Guedes",
       "Team_Name": "Wolves",
-      "Position": "NA",
+      "Position": "MID",
       "Gameweek_Points": [
         0, 1, 2, 7, 3, 0, 2, 1, 1, 0, 1, 0, 1, 7, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
@@ -7421,7 +7421,7 @@
     },
     {
       "id": 589,
-      "Player_Name": "Matheus Luiz Nunes",
+      "Player_Name": "Matheus",
       "Team_Name": "Wolves",
       "Position": "MID",
       "Gameweek_Points": [
@@ -7441,7 +7441,7 @@
     },
     {
       "id": 625,
-      "Player_Name": "Diego Da Silva Costa",
+      "Player_Name": "Diego-Costa",
       "Team_Name": "Wolves",
       "Position": "FWD",
       "Gameweek_Points": [
@@ -7491,7 +7491,7 @@
     },
     {
       "id": 682,
-      "Player_Name": "Matheus Santos Carneiro Da Cunha",
+      "Player_Name": "Matheus Cunha",
       "Team_Name": "Wolves",
       "Position": "FWD",
       "Gameweek_Points": [
@@ -7531,7 +7531,7 @@
     },
     {
       "id": 721,
-      "Player_Name": "João Victor Gomes da Silva",
+      "Player_Name": "João Gomes",
       "Team_Name": "Wolves",
       "Position": "MID",
       "Gameweek_Points": [
