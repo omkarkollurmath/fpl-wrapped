@@ -93,8 +93,6 @@ export const CarouselCards = (props) => {
       return retObj;
     }, { maxId: null, maxIdPlayerName: null, maxIdTeamName: null, maxValue: -Infinity, maxIdGameWeek: null });
 
-    console.log('!!!' + bestCaptainPick["maxIdGameWeek"]);
-
     //most captained player
     const {mostFrequent: MostCaptainedPlayerID, maxCount: FrequencyOfMostCaptainedPlayer} = 
       findMostFrequent(weeklyCaptainData);
@@ -157,6 +155,173 @@ export const CarouselCards = (props) => {
       .filter((gameweek) => gameweek["overall_rank"] === worst_overall_rank)
       .map((gw) => [{ "Game Week": gw.event, Rank: gw.overall_rank }]);
 
+    //preliminary data for category awards, mvp and best xi
+    const uniquePlayerIdsAndGWForTeam = [];
+
+    for (let i=0; i<teamData["weeklyData"].length; i++)
+    {
+      teamData["weeklyData"][i]["picks"].forEach((data) => 
+      {
+        const playerId = data["element"];
+        const gameWeeks = i + 1; //storing game week in object, need to increment by 1
+        const player = uniquePlayerIdsAndGWForTeam.filter((player) => player["id"] === playerId)
+        .map((player) => player)
+
+        if(player.length === 0)
+        {
+          uniquePlayerIdsAndGWForTeam.push({"id": playerId, "GameWeek": [gameWeeks]});
+        }
+        else
+        {
+          player[0]["GameWeek"] = [...player[0]["GameWeek"], gameWeeks];
+        }
+      });
+    }
+
+    const playerDetailsFromTeam = [];
+
+    for(let i=0; i<uniquePlayerIdsAndGWForTeam.length; i++)
+    {
+      let getPointsAndPlayerDetailsForPlayer = playerData
+        .filter((player) => player["id"] === uniquePlayerIdsAndGWForTeam[i]["id"])
+        .map((player) => [{
+           "id": player["id"],
+           "Player_Name": player["Player_Name"],
+           "Team_Name": player["Team_Name"],
+           "Position": player["Position"],
+           "Gameweek_Points": player["Gameweek_Points"],
+           "Gameweek_Played_For_Team": uniquePlayerIdsAndGWForTeam[i]["GameWeek"]
+            }]
+        )[0];
+      playerDetailsFromTeam.push(getPointsAndPlayerDetailsForPlayer[0]);
+    }
+
+    //compare gameweek_played-for_team and gameweek_points
+    let playerDetailsWithTotalPointsFromTeam = [];
+    for(let i=0 ; i<playerDetailsFromTeam.length; i++)
+    {
+      let totalPoints = 0;
+      for(let j=0 ; j<playerDetailsFromTeam[i]["Gameweek_Played_For_Team"].length; j++) 
+      {
+        const index = playerDetailsFromTeam[i]["Gameweek_Played_For_Team"][j]-1;
+        //Added a check due to incosistency of data
+        if(playerDetailsFromTeam[i]["Gameweek_Points"][index]) 
+        {
+          totalPoints = totalPoints + playerDetailsFromTeam[i]["Gameweek_Points"][index];
+        }
+      }
+      playerDetailsWithTotalPointsFromTeam[i] = {...playerDetailsFromTeam[i], "Total_Points": totalPoints}
+    }
+    
+    //category awards
+      //get top goalkeeper, defender, midfielder and attacker from above playerDetailsWithTotalPointsFromTeam
+      const getAllGoalkeepersFromTeam = playerDetailsWithTotalPointsFromTeam
+        .filter((player) => player["Position"] === "GK")
+        .map((player) => [{
+          "Player_Name": player["Player_Name"],
+          "Team_Name": player["Team_Name"],
+          "Position": player["Position"],
+          "Total_Points": player["Total_Points"]
+          }][0]
+        );
+
+      const topGoalkeeperAward = getAllGoalkeepersFromTeam.reduce((retPlayer, player) => {
+        if (player["Total_Points"] > retPlayer.maxPoints) {
+          return {
+            maxIdPlayerName: player["Player_Name"],
+            maxIdTeamName: player["Team_Name"],
+            maxPoints: player["Total_Points"],
+          };
+        }
+        return retPlayer;
+      }, { maxIdPlayerName: null, maxIdTeamName: null, maxPoints: -Infinity});
+      
+      const getAllDefendersFromTeam = playerDetailsWithTotalPointsFromTeam
+        .filter((player) => player["Position"] === "DEF")
+        .map((player) => [{
+          "Player_Name": player["Player_Name"],
+          "Team_Name": player["Team_Name"],
+          "Position": player["Position"],
+          "Total_Points": player["Total_Points"]
+          }][0]
+        );
+      
+      const topDefenderAward = getAllDefendersFromTeam.reduce((retPlayer, player) => {
+        if (player["Total_Points"] > retPlayer.maxPoints) {
+          return {
+            maxIdPlayerName: player["Player_Name"],
+            maxIdTeamName: player["Team_Name"],
+            maxPoints: player["Total_Points"],
+          };
+        }
+        return retPlayer;
+      }, { maxIdPlayerName: null, maxIdTeamName: null, maxPoints: -Infinity});
+
+      const getAllMidfieldersFromTeam = playerDetailsWithTotalPointsFromTeam
+        .filter((player) => player["Position"] === "MID")
+        .map((player) => [{
+          "Player_Name": player["Player_Name"],
+          "Team_Name": player["Team_Name"],
+          "Position": player["Position"],
+          "Total_Points": player["Total_Points"]
+          }][0]
+        );
+
+      const topMidfielderAward = getAllMidfieldersFromTeam.reduce((retPlayer, player) => {
+        if (player["Total_Points"] > retPlayer.maxPoints) {
+          return {
+            maxIdPlayerName: player["Player_Name"],
+            maxIdTeamName: player["Team_Name"],
+            maxPoints: player["Total_Points"],
+          };
+        }
+        return retPlayer;
+      }, { maxIdPlayerName: null, maxIdTeamName: null, maxPoints: -Infinity});
+
+      const getAllForwardsFromTeam = playerDetailsWithTotalPointsFromTeam
+        .filter((player) => player["Position"] === "FWD")
+        .map((player) => [{
+          "Player_Name": player["Player_Name"],
+          "Team_Name": player["Team_Name"],
+          "Position": player["Position"],
+          "Total_Points": player["Total_Points"]
+          }][0]
+        );
+
+      const topForwardAward = getAllForwardsFromTeam.reduce((retPlayer, player) => {
+        if (player["Total_Points"] > retPlayer.maxPoints) {
+          return {
+            maxIdPlayerName: player["Player_Name"],
+            maxIdTeamName: player["Team_Name"],
+            maxPoints: player["Total_Points"],
+          };
+        }
+        return retPlayer;
+      }, { maxIdPlayerName: null, maxIdTeamName: null, maxPoints: -Infinity});
+
+    //mvp
+    const mvp = playerDetailsWithTotalPointsFromTeam.reduce((retPlayer, player) => {
+      if (player["Total_Points"] > retPlayer.maxPoints) {
+        return {
+          maxIdPlayerName: player["Player_Name"],
+          maxIdTeamName: player["Team_Name"],
+          maxPoints: player["Total_Points"],
+        };
+      }
+      return retPlayer;
+    }, { maxIdPlayerName: null, maxIdTeamName: null, maxPoints: -Infinity});
+
+    //best xi
+      //get top goalkeeper
+      //get top 3 defenders
+      //get top 3 midfielders
+      //get top attacker
+      //create an array for remaining 2 defenders, 2 midfielders and 2 attackers
+        //sort them using points 
+          //get top 3 from this sorted array 
+          
+      //create a formation using position
+
     return {
       Best_Captain_Pick: bestCaptainPick["maxIdPlayerName"],
       Best_Captain_Pick_TeamName: bestCaptainPick["maxIdTeamName"],
@@ -170,7 +335,11 @@ export const CarouselCards = (props) => {
       Best_Overall_Rank: best_rank[0],
       Worst_Overall_Rank: worst_rank[0],
       Final_Overall_Rank: final_overall_rank,
-
+      Top_Goalkeeper_Award: topGoalkeeperAward,
+      Top_Defender_Award: topDefenderAward,
+      Top_Midfielder_Award: topMidfielderAward,
+      Top_Forward_Award: topForwardAward,
+      Most_Valuable_Player: mvp,
     };
   };
 
@@ -216,10 +385,14 @@ export const CarouselCards = (props) => {
         <br></br>
       </div>
       <div>
-        <CategoryAwards />
+        <CategoryAwards topGoalkeeperAward={processedData[0]["Top_Goalkeeper_Award"]}
+          topDefenderAward={processedData[0]["Top_Defender_Award"]}
+          topMidfielderAward={processedData[0]["Top_Midfielder_Award"]}
+          topForwardAward={processedData[0]["Top_Forward_Award"]}
+        />
       </div>
       <div>
-        <MostValuablePlayer />
+        <MostValuablePlayer mvp={processedData[0]["Most_Valuable_Player"]}/>
       </div>
       <div>
         <BestXI />

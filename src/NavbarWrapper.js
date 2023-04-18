@@ -9,7 +9,7 @@ const NavbarWrapper = () => {
     return (
         <Navbar bg="dark" variant="dark">
         <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/" >
               <img
                 alt="fpl-wrapped-logo"
                 src={AppIcon}
@@ -20,7 +20,7 @@ const NavbarWrapper = () => {
               Fantasy Premier League - Wrapped
             </Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link to='/about'>About Us</Nav.Link>
+              <Nav.Link href='/about'>About Us</Nav.Link>
             </Nav>
         </Container>
       </Navbar>
