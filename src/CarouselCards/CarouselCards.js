@@ -93,7 +93,7 @@ export const CarouselCards = (props) => {
       return retObj;
     }, { maxId: null, maxIdPlayerName: null, maxIdTeamName: null, maxValue: -Infinity, maxIdGameWeek: null });
 
-    console.log('!!!' + bestCaptainPick["maxIdGameWeek"]);
+    //console.log('!!!' + bestCaptainPick["maxIdGameWeek"]);
 
     //most captained player
     const {mostFrequent: MostCaptainedPlayerID, maxCount: FrequencyOfMostCaptainedPlayer} = 
