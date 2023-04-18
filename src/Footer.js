@@ -6,7 +6,7 @@ const Footer = () => {
         <footer>
             <Navbar className="justify-content-center text-center" fixed="bottom" bg="dark" variant="dark">
                 <Navbar.Text>
-                    Made with <span role="img" aria-label="heart-emoji">❤️️</span> by <span role="img" aria-label="panda-emoji">🐼</span>
+                We are not affiliated, associated, endorsed by, or in any way officially connected with the Premier League. All product and company names are trademarks™ or registered® trademarks of their respective holders
                 </Navbar.Text>
             </Navbar>
         </footer>
