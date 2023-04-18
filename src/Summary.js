@@ -29,7 +29,6 @@ export const Summary = () => {
           }
           
         } catch (error) {
-          //console.log(error);
           setError(true);
         }
       };
@@ -38,27 +37,23 @@ export const Summary = () => {
     }, [teamId,error]);
 
     if (error) {
-      // return <div>Invalid Team ID</div>
       if(!toast.isActive("invalid-team-id")){
-        toast.error("Invalid Team ID", {toastId: "invalid-team-id"});
+        toast.error("Failed to get API response, Please check Team ID.", {toastId: "invalid-team-id"});
       }
       navigate('/');
     }
   
   
     return (
-        loading ? <LoadingPage /> :
-        (
-            
-            <div>
-            <CarouselCards data={data}/>
-            <HorizontalBarChart data={data["weeklyData"]}/>
-            {error && <ToastContainer autoClose={2000} hideProgressBar theme="light" position="top-center"/>}
-            </div>
-          
-            
-        )
-        )
+      loading ? <LoadingPage /> :
+      (    
+        <div>
+          <CarouselCards data={data}/>
+          <HorizontalBarChart data={data["weeklyData"]}/>
+          {error && <ToastContainer autoClose={2000} hideProgressBar theme="light" position="top-center"/>}
+        </div>        
+      )
+    )
 }
 
 export default Summary;
