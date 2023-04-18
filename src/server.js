@@ -16,22 +16,39 @@ app.get("/get/:id", async(req,res) => {
 
     const data = {}
 
-    const teamHistoryData = await fetch(`https://fantasy.premierleague.com/api/entry/${teamID}/history/`);
-    const response = await teamHistoryData.json();
-
-    data["teamHistoryData"] = response;
-
-    const gameWeekData = []
-
-    for(let i=1;i<=response["current"].length; i++){
-        let weekData = await fetch(`https://fantasy.premierleague.com/api/entry/${teamID}/event/${i}/picks/`);
-        let responseData = await weekData.json();
-        gameWeekData.push(responseData);
-    }
+    const teamHistoryData = await fetch(`https://fantasy.premierleague.com/api/entry/${teamID}/history/`)
+                                  .then(response => {
+                                    if(!response.ok){
+                                        throw new Error('No record found');
+                                    }
+                                    return response.json();
+                                  })
+                                  .then(data => data)
+                                  .catch(error => {
+                                    res.status(404).send(error);
+                                    return;
+                                  })
     
-    data["weeklyData"] = gameWeekData
+    if(teamHistoryData !== undefined){
 
-    res.send(data)
+        const response = teamHistoryData;
+
+        data["teamHistoryData"] = response;
+
+        
+
+        const gameWeekData = []
+
+        for(let i=1;i<=response["current"].length; i++){
+            let weekData = await fetch(`https://fantasy.premierleague.com/api/entry/${teamID}/event/${i}/picks/`);
+            let responseData = await weekData.json();
+            gameWeekData.push(responseData);
+        }
+        
+        data["weeklyData"] = gameWeekData
+
+        res.send(data)
+    }
 })
 
 app.listen(8000, () => {
