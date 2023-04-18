@@ -5,7 +5,7 @@ import NavbarWrapper from "./NavbarWrapper"
 import Home from "./Home";
 import Footer from "./Footer";
 import Summary from "./Summary";
-// import AboutUs from "./about";
+import AboutUs from "./about";
 import PageNotFound from "./PageNotFound";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         
           <Route exact path=":teamId/summary" Component={Summary} />
         
-          {/* <Route exact path="/about" Component={AboutUs} /> */}
+          <Route exact path="/about" Component={AboutUs} />
         
           <Route path="*" Component={PageNotFound} />
         </Routes>
