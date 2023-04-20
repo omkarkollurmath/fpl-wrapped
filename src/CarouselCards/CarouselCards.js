@@ -312,15 +312,50 @@ export const CarouselCards = (props) => {
     }, { maxIdPlayerName: null, maxIdTeamName: null, maxPoints: -Infinity});
 
     //best xi
-      //get top goalkeeper
-      //get top 3 defenders
-      //get top 3 midfielders
-      //get top attacker
-      //create an array for remaining 2 defenders, 2 midfielders and 2 attackers
-        //sort them using points 
-          //get top 3 from this sorted array 
-          
-      //create a formation using position
+
+    const top2Goalkeepers = getAllGoalkeepersFromTeam
+      .sort((a, b) => b["Total_Points"] - a["Total_Points"])
+      .slice(0, 2) 
+      .map((player) => [{
+        "Player_Name": player["Player_Name"],
+        "Team_Name": player["Team_Name"],
+        "Position": player["Position"],
+        "Total_Points": player["Total_Points"]
+        }][0]
+      );
+
+    const top5Defenders = getAllDefendersFromTeam
+      .sort((a, b) => b["Total_Points"] - a["Total_Points"])
+      .slice(0, 5) 
+      .map((player) => [{
+        "Player_Name": player["Player_Name"],
+        "Team_Name": player["Team_Name"],
+        "Position": player["Position"],
+        "Total_Points": player["Total_Points"]
+        }][0]
+      );
+
+    const top5Midfielders = getAllMidfieldersFromTeam
+      .sort((a, b) => b["Total_Points"] - a["Total_Points"])
+      .slice(0, 5) 
+      .map((player) => [{
+        "Player_Name": player["Player_Name"],
+        "Team_Name": player["Team_Name"],
+        "Position": player["Position"],
+        "Total_Points": player["Total_Points"]
+        }][0]
+      );
+
+    const top3Forwards = getAllForwardsFromTeam
+      .sort((a, b) => b["Total_Points"] - a["Total_Points"])
+      .slice(0, 3) 
+      .map((player) => [{
+        "Player_Name": player["Player_Name"],
+        "Team_Name": player["Team_Name"],
+        "Position": player["Position"],
+        "Total_Points": player["Total_Points"]
+        }][0]
+      );
 
     return {
       Best_Captain_Pick: bestCaptainPick["maxIdPlayerName"],
@@ -340,6 +375,10 @@ export const CarouselCards = (props) => {
       Top_Midfielder_Award: topMidfielderAward,
       Top_Forward_Award: topForwardAward,
       Most_Valuable_Player: mvp,
+      Top2_Goalkeepers: top2Goalkeepers,
+      Top5_Defenders: top5Defenders,
+      Top5_Midfielders: top5Midfielders,
+      Top3_Forwards: top3Forwards,
     };
   };
 
@@ -395,7 +434,10 @@ export const CarouselCards = (props) => {
         <MostValuablePlayer mvp={processedData[0]["Most_Valuable_Player"]}/>
       </div>
       <div>
-        <BestXI />
+        <BestXI top2Goalkeepers={processedData[0]["Top2_Goalkeepers"]}
+          top5Defenders={processedData[0]["Top5_Defenders"]}
+          top5Midfielders={processedData[0]["Top5_Midfielders"]}
+          top3Forwards={processedData[0]["Top3_Forwards"]}/>
       </div>
     </Slider>
   );
