@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Jersey from '../Jersey';
 import { useState } from "react";
+import Share from "../components/Share"
 
 export const BestXI = (props) => {
 
@@ -151,10 +152,17 @@ export const BestXI = (props) => {
         sortRemainingPlayers();
     });
 
+    const shareText = "My FPL 2022-23 Best XI brought to you by FPL-Wrapped!\n\n" + 
+                       props.top2Goalkeepers[0].Player_Name.substring(props.top2Goalkeepers[0].Player_Name.indexOf(' ') + 1) + '\n' +
+                       props.top5Defenders[0].Player_Name.substring(props.top5Defenders[0].Player_Name.indexOf(' ') + 1) + '\n' +
+                       props.top5Defenders[1].Player_Name.substring(props.top5Defenders[1].Player_Name.indexOf(' ') + 1) + '\n' +
+                       props.top5Defenders[2].Player_Name.substring(props.top5Defenders[2].Player_Name.indexOf(' ') + 1) + '\n'
+
     return (
         <React.Fragment>
             <div style={{display: "inline-flex"}}>
                 <div>
+                <Share description={shareText}/>
                     <span>Best XI</span> 
                     <div>
                         <div style={{display:"inline-flex"}}>
