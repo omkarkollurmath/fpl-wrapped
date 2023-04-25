@@ -1,5 +1,4 @@
 import React from 'react';
-import dev3 from './utils/amod.jpg';
   
 const AboutUs = () => {
   return (
