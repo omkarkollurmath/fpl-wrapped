@@ -401,27 +401,23 @@ export const CarouselCards = (props) => {
         />
       </div>
       <div>
-        <span>Best Week: GW{processedData[0]["Best_Week"][0]["Game Week"]}</span>
-        <br></br>
-        <span>Points: {processedData[0]["Best_Week"][0]["Points"]}</span>
-        <br></br>
-        <span>Worst Week: GW{processedData[0]["Worst_Week"][0]["Game Week"]}</span>
-        <br></br>
-        <span>Points: {processedData[0]["Worst_Week"][0]["Points"]}</span>
-        <br></br>
+        <div style={{fontSize : 20, fontWeight: '500', paddingBottom : '0.5%'}}>Best Gameweek</div>
+        <div style={{paddingBottom : '3%'}}>GW{processedData[0]["Best_Week"][0]["Game Week"]} - Points: {processedData[0]["Best_Week"][0]["Points"]}</div>
+
+        <div style={{fontSize : 20, fontWeight: '500', paddingBottom : '0.5%'}}>Worst Gameweek</div>
+        <span>GW{processedData[0]["Worst_Week"][0]["Game Week"]} - Points: {processedData[0]["Worst_Week"][0]["Points"]}</span>
+
       </div>
       <div>
-        <span>Best Rank: {processedData[0]["Best_Overall_Rank"][0]["Rank"]}</span>
-        <br></br>
-        <span>GW: {processedData[0]["Best_Overall_Rank"][0]["Game Week"]}</span>
-        <br></br>
-        <span>Worst Rank: {processedData[0]["Worst_Overall_Rank"][0]["Rank"]}</span>
-        <br></br>
-        <span>GW: {processedData[0]["Worst_Overall_Rank"][0]["Game Week"]}</span>
-        <br></br>
-        <span>Final Rank: {processedData[0]["Final_Overall_Rank"]}
-        </span>
-        <br></br>
+        <div style={{fontSize : 20, fontWeight: '500', paddingBottom : '0.5%'}}>Best Rank</div>
+        <div style={{paddingBottom : '3%'}}>{processedData[0]["Best_Overall_Rank"][0]["Rank"]} in GW: {processedData[0]["Best_Overall_Rank"][0]["Game Week"]}</div>
+
+        <div style={{fontSize : 20, fontWeight: '500', paddingBottom : '0.5%'}}>Worst Rank</div>
+        <div style={{paddingBottom : '3%'}}>{processedData[0]["Worst_Overall_Rank"][0]["Rank"]} in GW: {processedData[0]["Worst_Overall_Rank"][0]["Game Week"]}</div>
+
+        <div style={{fontSize : 20, fontWeight: '500', paddingBottom : '0.5%'}}>Final Rank</div>
+        <div style={{paddingBottom : '3%'}}>{processedData[0]["Final_Overall_Rank"]} after GW: 38</div>
+
       </div>
       <div>
         <CategoryAwards topGoalkeeperAward={processedData[0]["Top_Goalkeeper_Award"]}

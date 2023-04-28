@@ -152,12 +152,44 @@ export const BestXI = (props) => {
         sortRemainingPlayers();
     });
 
-    const shareText = "My FPL 2022-23 Best XI brought to you by FPL-Wrapped!\n\n" + 
+    var shareText = "My FPL 2022-23 Best XI brought to you by FPL-Wrapped!\n\n" + 
                        props.top2Goalkeepers[0].Player_Name.substring(props.top2Goalkeepers[0].Player_Name.indexOf(' ') + 1) + '\n' +
                        props.top5Defenders[0].Player_Name.substring(props.top5Defenders[0].Player_Name.indexOf(' ') + 1) + '\n' +
                        props.top5Defenders[1].Player_Name.substring(props.top5Defenders[1].Player_Name.indexOf(' ') + 1) + '\n' +
                        props.top5Defenders[2].Player_Name.substring(props.top5Defenders[2].Player_Name.indexOf(' ') + 1) + '\n'
 
+    if (fourthDefender === true) {
+        shareText += props.top5Defenders[3].Player_Name.substring(props.top5Defenders[3].Player_Name.indexOf(' ') + 1) + '\n'
+    }
+
+    if (fifthDefender === true) {
+        shareText += props.top5Defenders[4].Player_Name.substring(props.top5Defenders[4].Player_Name.indexOf(' ') + 1) + '\n'
+    }
+
+    shareText += props.top5Midfielders[0].Player_Name.substring(props.top5Midfielders[0].Player_Name.indexOf(' ') + 1) + '\n'
+    shareText += props.top5Midfielders[1].Player_Name.substring(props.top5Midfielders[1].Player_Name.indexOf(' ') + 1) + '\n'
+    shareText += props.top5Midfielders[2].Player_Name.substring(props.top5Midfielders[2].Player_Name.indexOf(' ') + 1) + '\n'
+
+
+    if (fourthMidfielder === true) {
+        shareText += props.top5Midfielders[3].Player_Name.substring(props.top5Midfielders[3].Player_Name.indexOf(' ') + 1) + '\n'
+    }
+
+    if (fifthMidfielder === true) {
+        shareText += props.top5Midfielders[4].Player_Name.substring(props.top5Midfielders[4].Player_Name.indexOf(' ') + 1) + '\n'
+    }
+
+    shareText += props.top3Forwards[0].Player_Name.substring(props.top3Forwards[0].Player_Name.indexOf(' ') + 1) + '\n'
+
+    if (secondForward === true) {
+        shareText += props.top3Forwards[1].Player_Name.substring(props.top3Forwards[1].Player_Name.indexOf(' ') + 1) + '\n'
+    }
+    
+    if (thirdForward === true) {
+        shareText += props.top3Forwards[2].Player_Name.substring(props.top3Forwards[2].Player_Name.indexOf(' ') + 1) + '\n'
+    }
+
+    shareText += "#FPLWrapped"
     return (
         <React.Fragment>
             <div style={{display: "inline-flex"}}>

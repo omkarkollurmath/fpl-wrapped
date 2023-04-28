@@ -8,9 +8,9 @@ export const BestCaptainPick = (props) => {
 
     return (
         <React.Fragment>
-            <div>Best Captain Pick</div>
+            <div style={{fontSize : 20, fontWeight: '500', paddingBottom : '1%'}}>Best Captain Pick</div>
             <Jersey teamName={teamName} height={200}/>
-            <div>
+            <div style={{paddingTop : "1%"}}>
                 <span>{props.name} (GW{props.gameWeek} - {props.points} points)</span>
             </div>  
         </React.Fragment>
