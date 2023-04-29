@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router';
 import "./Home.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import instruction from './utils/instructions.png'
 
 const Home = () => {
 
@@ -53,11 +52,11 @@ const Home = () => {
                     <span>Submit</span>
                 </Button>
             </div>
-            <div style={{fontSize : 30, fontWeight: '500', paddingTop : '1%'}}>How to find you Fantasy Premier League Team ID?</div>
+            <div style={{fontSize : 30, fontWeight: '500', paddingTop : '5%', paddingBottom : '1%'}}>How to find you Fantasy Premier League Team ID?</div>
 
             <div>Login to your account at <a href="https://fantasy.premierleague.com">https://fantasy.premierleague.com</a> and click on the "Points" tab</div>
-            <div style={{paddingBottom: '1%'}}>Check your browser's address bar and you should find your ID as shown in the image below</div>
-            <img src={instruction} alt = "Instructions"></img>
+            <div style={{paddingTop: '1%'}}>Check your browser's address bar and you should find your ID through the URL address. For example, if the URL is <a href="
+            https://fantasy.premierleague.com/entry/497062/event/34">https://fantasy.premierleague.com/entry/497062/event/34</a>, your Team ID is 497062</div>
             
             <ToastContainer autoClose={2000} hideProgressBar theme="light" position="top-center"/>
         </React.Fragment>
