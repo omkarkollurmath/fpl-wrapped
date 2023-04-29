@@ -9,19 +9,21 @@ const NavbarWrapper = () => {
     return (
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/" >
-            <img
-              alt="fpl-wrapped-logo"
-              src={AppIcon}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
-            Fantasy Premier League - Wrapped
-          </Navbar.Brand>
+        <Navbar.Brand href="/" >
+              <img
+                alt="fpl-wrapped-logo"
+                src={AppIcon}
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+              Fantasy Premier League - Wrapped
+        </Navbar.Brand>
+        <Navbar.Collapse className="justify-content-end">
           <Nav className="me-auto">
-            <Nav.Link href='/about'>About Us</Nav.Link>
+            <Nav.Link href="/about">About Us</Nav.Link>
           </Nav>
+        </Navbar.Collapse>
         </Container>
       </Navbar>
     );
