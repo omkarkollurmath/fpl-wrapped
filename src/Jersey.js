@@ -60,7 +60,7 @@ export const Jersey = (props) => {
                 return <img src={Southampton} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
             case 'Spurs':
                 return <img src={Spurs} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
-            case 'WestHam':
+            case 'West Ham':
                 return <img src={WestHam} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
             case 'Wolves':
                 return <img src={Wolves} alt={props.teamName} style={{display: "unset"}} height={props.height}/>

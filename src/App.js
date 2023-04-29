@@ -15,8 +15,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route exact path="/" Component={Home} />
-        
-        
+          
           <Route exact path=":teamId/summary" Component={Summary} />
         
           <Route exact path="/about" Component={AboutUs} />

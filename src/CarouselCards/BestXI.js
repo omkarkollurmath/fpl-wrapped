@@ -33,7 +33,9 @@ export const BestXI = (props) => {
     function playerFunction(teamName, playerName, totalPoints){
         return(
             <div style={{display:"grid"}}>
-                <Jersey teamName={teamName} height={100}/>
+                <div>
+                    <Jersey teamName={teamName} height={100}/>
+                </div>
                 <span>{playerName}</span>
                 <span>({totalPoints} points)</span>
             </div>
@@ -192,9 +194,11 @@ export const BestXI = (props) => {
     shareText += "#FPLWrapped"
     return (
         <React.Fragment>
-            <div style={{display: "inline-flex"}}>
-                <div>
-                <Share description={shareText}/>
+            <div>
+                <Share description={shareText}/>    
+            </div>       
+            <div style={{display: "inline-flex", width: "60%"}}>
+                <div style={{minWidth:"-webkit-fill-available"}}>
                     <span>Best XI</span> 
                     <div>
                         <div style={{display:"inline-flex"}}>
@@ -202,65 +206,105 @@ export const BestXI = (props) => {
                         </div>
                     </div>
                     <div>
-                        <div style={{display:"inline-flex"}}>
-                            {playerFunction(teamName3, props.top5Defenders[0].Player_Name, props.top5Defenders[0].Total_Points)}
-                            {playerFunction(teamName4, props.top5Defenders[1].Player_Name, props.top5Defenders[1].Total_Points)}
-                            {playerFunction(teamName5, props.top5Defenders[2].Player_Name, props.top5Defenders[2].Total_Points)}
+                        <div style={{display:"inline-flex", justifyContent: "space-around", width: "100%"}}>
+                            <div style={{minWidth: 'fit-content'}}>
+                                {playerFunction(teamName3, props.top5Defenders[0].Player_Name, props.top5Defenders[0].Total_Points)}
+                            </div>
+                            <div style={{minWidth: 'fit-content'}}>
+                                {playerFunction(teamName4, props.top5Defenders[1].Player_Name, props.top5Defenders[1].Total_Points)}
+                            </div>
+                            <div style={{minWidth: 'fit-content'}}>
+                               {playerFunction(teamName5, props.top5Defenders[2].Player_Name, props.top5Defenders[2].Total_Points)}
+                            </div>
                             {fourthDefender && 
-                                playerFunction(teamName6, props.top5Defenders[3].Player_Name, props.top5Defenders[3].Total_Points)
+                                <div style={{minWidth: 'fit-content'}}>
+                                    {playerFunction(teamName6, props.top5Defenders[3].Player_Name, props.top5Defenders[3].Total_Points)}
+                                </div>
                             }
                             {fifthDefender && 
-                                playerFunction(teamName7, props.top5Defenders[4].Player_Name, props.top5Defenders[4].Total_Points)
+                                <div style={{minWidth: 'fit-content'}}>
+                                    {playerFunction(teamName7, props.top5Defenders[4].Player_Name, props.top5Defenders[4].Total_Points)}
+                                </div>
                             }
                         </div>
                     </div>
                     <div>
-                        <div style={{display:"inline-flex"}}>
-                            {playerFunction(teamName8, props.top5Midfielders[0].Player_Name, props.top5Midfielders[0].Total_Points)}
-                            {playerFunction(teamName9, props.top5Midfielders[1].Player_Name, props.top5Midfielders[1].Total_Points)}
-                            {playerFunction(teamName10, props.top5Midfielders[2].Player_Name, props.top5Midfielders[2].Total_Points)}
+                        <div style={{display:"inline-flex", justifyContent: "space-around", width: "100%"}}>
+                            <div style={{minWidth: 'fit-content'}}>
+                                {playerFunction(teamName8, props.top5Midfielders[0].Player_Name, props.top5Midfielders[0].Total_Points)}
+                            </div>
+                            <div style={{minWidth: 'fit-content'}}>
+                                {playerFunction(teamName9, props.top5Midfielders[1].Player_Name, props.top5Midfielders[1].Total_Points)}
+                            </div>
+                            <div style={{minWidth: 'fit-content'}}>      
+                                {playerFunction(teamName10, props.top5Midfielders[2].Player_Name, props.top5Midfielders[2].Total_Points)}
+                            </div>
                             {fourthMidfielder && 
-                                playerFunction(teamName11, props.top5Midfielders[3].Player_Name, props.top5Midfielders[3].Total_Points)
+                                <div style={{minWidth: 'fit-content'}}>
+                                    {playerFunction(teamName11, props.top5Midfielders[3].Player_Name, props.top5Midfielders[3].Total_Points)}
+                                </div>
                             }
-                            {fifthMidfielder && 
-                                playerFunction(teamName12, props.top5Midfielders[4].Player_Name, props.top5Midfielders[4].Total_Points)
+                            {fifthMidfielder &&
+                                <div style={{minWidth: 'fit-content'}}>
+                                    {playerFunction(teamName12, props.top5Midfielders[4].Player_Name, props.top5Midfielders[4].Total_Points)}
+                                </div>
                             }
                         </div>
                     </div>
                     <div>
-                        <div style={{display:"inline-flex"}}>
-                            {playerFunction(teamName13, props.top3Forwards[0].Player_Name, props.top3Forwards[0].Total_Points)}
+                        <div style={{display:"inline-flex", justifyContent: "space-around", width: "100%"}}>
+                            <div style={{minWidth: 'fit-content'}}>
+                                {playerFunction(teamName13, props.top3Forwards[0].Player_Name, props.top3Forwards[0].Total_Points)}
+                            </div>
                             {secondForward && 
-                                playerFunction(teamName14, props.top3Forwards[1].Player_Name, props.top3Forwards[1].Total_Points)
+                                <div style={{minWidth: 'fit-content'}}>
+                                    {playerFunction(teamName14, props.top3Forwards[1].Player_Name, props.top3Forwards[1].Total_Points)}
+                                </div>
                             }
                             {thirdForward &&
-                                playerFunction(teamName15, props.top3Forwards[2].Player_Name, props.top3Forwards[2].Total_Points)
+                                <div style={{minWidth: 'fit-content'}}>
+                                    {playerFunction(teamName15, props.top3Forwards[2].Player_Name, props.top3Forwards[2].Total_Points)}
+                                </div>
                             }
                         </div>
                     </div>
                 </div>
-                <div style={{paddingLeft: "50px"}}>
+                <div style={{paddingLeft: '10%'}}>
                     <div>
                         <span>Bench</span> 
                         <div>
-                            {playerFunction(teamName2, props.top2Goalkeepers[1].Player_Name, props.top2Goalkeepers[1].Total_Points)}
+                            <div style={{minWidth: 'max-content'}}>
+                                {playerFunction(teamName2, props.top2Goalkeepers[1].Player_Name, props.top2Goalkeepers[1].Total_Points)}
+                            </div>
                             {!fourthDefender && 
-                                playerFunction(teamName6, props.top5Defenders[3].Player_Name, props.top5Defenders[3].Total_Points)
+                                <div style={{minWidth: 'max-content'}}>
+                                    {playerFunction(teamName6, props.top5Defenders[3].Player_Name, props.top5Defenders[3].Total_Points)}
+                                </div>
                             }
                             {!fifthDefender && 
-                                playerFunction(teamName7, props.top5Defenders[4].Player_Name, props.top5Defenders[4].Total_Points)
+                                <div style={{minWidth: 'max-content'}}>
+                                    {playerFunction(teamName7, props.top5Defenders[4].Player_Name, props.top5Defenders[4].Total_Points)}
+                                </div>
                             }
                             {!fourthMidfielder && 
-                                playerFunction(teamName11, props.top5Midfielders[3].Player_Name, props.top5Midfielders[3].Total_Points)
+                                <div style={{minWidth: 'max-content'}}>
+                                    {playerFunction(teamName11, props.top5Midfielders[3].Player_Name, props.top5Midfielders[3].Total_Points)}
+                                </div>    
                             }
                             {!fifthMidfielder && 
-                                playerFunction(teamName12, props.top5Midfielders[4].Player_Name, props.top5Midfielders[4].Total_Points)
+                                <div style={{minWidth: 'max-content'}}>
+                                    {playerFunction(teamName12, props.top5Midfielders[4].Player_Name, props.top5Midfielders[4].Total_Points)}
+                                </div>    
                             }
                             {!secondForward && 
-                                playerFunction(teamName14, props.top3Forwards[1].Player_Name, props.top3Forwards[1].Total_Points)
+                                <div style={{minWidth: 'max-content'}}>
+                                    {playerFunction(teamName14, props.top3Forwards[1].Player_Name, props.top3Forwards[1].Total_Points)}
+                                </div>
                             }
                             {!thirdForward &&
-                                playerFunction(teamName15, props.top3Forwards[2].Player_Name, props.top3Forwards[2].Total_Points)
+                                <div style={{minWidth: 'max-content'}}>
+                                    {playerFunction(teamName15, props.top3Forwards[2].Player_Name, props.top3Forwards[2].Total_Points)}
+                                </div>
                             }
                         </div>
                     </div>
