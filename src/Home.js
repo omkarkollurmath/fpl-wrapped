@@ -32,8 +32,6 @@ const Home = () => {
             
             toast.error("Team Id cannot be empty.")
         }
-
-        
     };
 
     return(
