@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,17 +9,20 @@ import MostValuablePlayer from "./MostValuablePlayer";
 import BestXI from "./BestXI";
 import playerData from "../internalData/data_with_points_and_pos.json";
 
+
 import './Carousel.css';
 
-export const CarouselCards = (props) => {
+const CarouselCards = (props) => {
   const settings = {
     dots: true,
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  
+  
+  const teamData = props.processed ? null : props.data
 
-  const teamData = props.data;
 
   function findMostFrequent(arr) {
     // Create an object to store counts for each element
@@ -358,6 +361,7 @@ export const CarouselCards = (props) => {
       );
 
     return {
+      TeamID : +props.teamID, 
       Best_Captain_Pick: bestCaptainPick["maxIdPlayerName"],
       Best_Captain_Pick_TeamName: bestCaptainPick["maxIdTeamName"],
       Best_Captain_Pick_GameWeek: bestCaptainPick["maxIdGameWeek"],
@@ -366,7 +370,9 @@ export const CarouselCards = (props) => {
       Most_Captained_Player_Team_Name: MostCaptainedPlayerName[0].Team_Name,
       Frequency_Of_Most_Captained_Player: FrequencyOfMostCaptainedPlayer,
       Best_Week: best_week[0],
+      Best_Week_Points : best_week[1],
       Worst_Week: worst_week[0],
+      Worst_Week_Points : worst_week[1],
       Best_Overall_Rank: best_rank[0],
       Worst_Overall_Rank: worst_rank[0],
       Final_Overall_Rank: final_overall_rank,
@@ -378,12 +384,45 @@ export const CarouselCards = (props) => {
       Top2_Goalkeepers: top2Goalkeepers,
       Top5_Defenders: top5Defenders,
       Top5_Midfielders: top5Midfielders,
-      Top3_Forwards: top3Forwards,
+      Top3_Forwards: top3Forwards
     };
   };
 
+  async function postData(props, processedData) {
+    if(!props.processed){
+      try {
+        const response = await fetch(`http://localhost:8000/post/${props.teamID}`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(processedData)
+        });
+        console.log(response);
+      } catch(error) {
+        console.error(error);
+      }
+    }
+  }
+  
+
   let processedData = [];
-  processedData.push(processData());
+
+  // console.log(props.processed)
+
+  if(props.processed){
+    processedData.push({...props.data})
+  }else{
+
+    processedData.push(processData());
+    postData(props, processedData);
+  }
+  
+  console.log(props)
+
+  
+  
+  
 
   return (
     <Slider {...settings} arrows style={{ paddingTop: "75px" }}>
