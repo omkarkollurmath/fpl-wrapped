@@ -114,16 +114,12 @@ export const CarouselCards = (props) => {
     const removedGW7ForWorstWeekTeamData = teamData["teamHistoryData"]["current"]
     .filter((gameweek) => gameweek["event"] !== 7);
 
-    //console.log('!!!' + JSON.stringify(removedGW7ForWorstWeekTeamData));
-
     const worst_week_points = Math.min.apply(  
       Math,
       removedGW7ForWorstWeekTeamData.map((gameweek) => {
         return gameweek["points"];
       })
     );
-
-    //console.log('!!!' + JSON.stringify(worst_week_points));
 
     //best rank, worst rank and final rank
     const best_overall_rank = Math.min.apply(
