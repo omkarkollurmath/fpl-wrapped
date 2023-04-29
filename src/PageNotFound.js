@@ -3,12 +3,12 @@ import errorImage from './utils/404.jpg';
 
 const PageNotFound = () => {
     return(
-        <div>
-        <br/><br/>
+        <div style={{paddingTop: '2%'}}>
             <h1>Oops!</h1>
-            <br/>
-            <p>The page you are looking for has been moved, deleted or possibly never existed!</p>
-            <img src={errorImage} alt="404"></img>
+            <div style={{paddingTop: '1%'}}>
+                <p>The page you are looking for has been moved, deleted or possibly never existed!</p>
+                <img src={errorImage} alt="404"></img>
+            </div>
         </div>
     )
 }

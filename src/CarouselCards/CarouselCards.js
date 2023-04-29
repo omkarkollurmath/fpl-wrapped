@@ -87,7 +87,7 @@ export const CarouselCards = (props) => {
           maxIdPlayerName: obj["Player_Name"],
           maxIdTeamName: obj["Team_Name"],
           maxValue: obj["Gameweek_Points"],
-          maxIdGameWeek: index
+          maxIdGameWeek: index + 1
         };
       }
       return retObj;
@@ -114,12 +114,16 @@ export const CarouselCards = (props) => {
     const removedGW7ForWorstWeekTeamData = teamData["teamHistoryData"]["current"]
     .filter((gameweek) => gameweek["event"] !== 7);
 
+    //console.log('!!!' + JSON.stringify(removedGW7ForWorstWeekTeamData));
+
     const worst_week_points = Math.min.apply(  
       Math,
       removedGW7ForWorstWeekTeamData.map((gameweek) => {
         return gameweek["points"];
       })
     );
+
+    //console.log('!!!' + JSON.stringify(worst_week_points));
 
     //best rank, worst rank and final rank
     const best_overall_rank = Math.min.apply(
@@ -145,7 +149,7 @@ export const CarouselCards = (props) => {
     const best_week = teamData["teamHistoryData"]["current"]
       .filter((gameweek) => gameweek["points"] === best_week_points)
       .map((gw) => [{ "Game Week": gw.event, Points: gw.points }]);
-    const worst_week = teamData["teamHistoryData"]["current"]
+    const worst_week = removedGW7ForWorstWeekTeamData
       .filter((gameweek) => gameweek["points"] === worst_week_points)
       .map((gw) => [{ "Game Week": gw.event, Points: gw.points }]);
     const best_rank = teamData["teamHistoryData"]["current"]

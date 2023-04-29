@@ -39,7 +39,7 @@ const Home = () => {
     return(
         <React.Fragment>
             <div className='home-page-div'>
-                <span className='team-id-text'>Enter the team ID : </span>
+                <span className='team-id-text'>Enter the team ID </span>
                 <input
                     type='text'
                     placeholder={'1234567'}
@@ -49,21 +49,16 @@ const Home = () => {
                     required
                     value={teamId}
                 />
-                <div className="button-submit">
-                    <Button variant="primary" onClick={handleSubmitButtonOnClick}>
-                        <span>Submit</span>
-                    </Button>
-                </div>
-                
-                
             </div>
-            <br></br>
-            <br></br>
-            <div style={{fontSize : 30, fontWeight: '500', paddingBottom : '1%'}}>How to find you Fantasy Premier League Team ID?</div>
+            <div className="button-submit">
+                <Button variant="primary" onClick={handleSubmitButtonOnClick}>
+                    <span>Submit</span>
+                </Button>
+            </div>
+            <div style={{fontSize : 30, fontWeight: '500', paddingTop : '1%'}}>How to find you Fantasy Premier League Team ID?</div>
 
             <div>Login to your account at <a href="https://fantasy.premierleague.com">https://fantasy.premierleague.com</a> and click on the "Points" tab</div>
-            <div>Check your browser's address bar and you should find your ID as shown in the image below</div>
-            <br/>
+            <div style={{paddingBottom: '1%'}}>Check your browser's address bar and you should find your ID as shown in the image below</div>
             <img src={instruction} alt = "Instructions"></img>
             
             <ToastContainer autoClose={2000} hideProgressBar theme="light" position="top-center"/>
