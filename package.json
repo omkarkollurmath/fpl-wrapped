@@ -22,7 +22,8 @@
     "react-slick": "^0.29.0",
     "react-toastify": "^9.1.2",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "mongoose": "^7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
