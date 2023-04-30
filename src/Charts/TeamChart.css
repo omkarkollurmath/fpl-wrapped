@@ -1,5 +1,25 @@
 .chart-container {
-    width: 800px;
-    height:400px;
-    margin: 100px 50px;
+    width: 70%;
+    height: 80%;
+    margin: 10% 5%;
+ }
+
+ @media only screen and (max-width: 768px) {
+
+    .chart-container {
+        width: 80%;
+        height: 80%;
+        margin: 10% 5%;
+     }
+
+ }
+
+ @media only screen and (max-width: 600px) {
+
+    .chart-container {
+        width: 85%;
+        height: 85%;
+        margin: 10% 10%;
+     }
+
  }

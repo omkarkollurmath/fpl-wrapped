@@ -1,0 +1,12 @@
+.home-navbar{
+    margin-bottom : 20%;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .home-navbar{
+        margin-bottom : 20%;
+    }
+
+}

@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router';
 import "./Home.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Container from 'react-bootstrap/Container';
+import instructionImage from './utils/instructions.png';
 
 const Home = () => {
 
@@ -35,7 +37,7 @@ const Home = () => {
 
     return(
         <React.Fragment>
-            <div className='home-page-div'>
+            <Container fluid>
                 <span className='team-id-text'>Enter the team ID </span>
                 <input
                     type='text'
@@ -46,17 +48,19 @@ const Home = () => {
                     required
                     value={teamId}
                 />
-            </div>
+            </Container>
             <div className="button-submit">
                 <Button variant="primary" onClick={handleSubmitButtonOnClick}>
                     <span>Submit</span>
                 </Button>
             </div>
-            <div style={{fontSize : 30, fontWeight: '500', paddingTop : '5%', paddingBottom : '1%'}}>How to find you Fantasy Premier League Team ID?</div>
+            <div style={{fontWeight: '500', paddingTop : '5%', paddingBottom : '1%'}}>How to find you Fantasy Premier League Team ID?</div>
+          
+            <div>Login to your account at <a href="https://fantasy.premierleague.com">https://fantasy.premierleague.com</a> <p>and click on the "Points" tab</p></div>
+            <div style={{padding: '1%'}}>Check your browser's address bar and you should find your ID through the URL address.<p>
+                <img src={instructionImage} alt="Instructions" className="img-size"></img>
+            </p> where 497062 is the ID.</div>
 
-            <div>Login to your account at <a href="https://fantasy.premierleague.com">https://fantasy.premierleague.com</a> and click on the "Points" tab</div>
-            <div style={{paddingTop: '1%'}}>Check your browser's address bar and you should find your ID through the URL address. For example, if the URL is <a href="
-            https://fantasy.premierleague.com/entry/497062/event/34">https://fantasy.premierleague.com/entry/497062/event/34</a>, your Team ID is 497062</div>
             
             <ToastContainer autoClose={2000} hideProgressBar theme="light" position="top-center"/>
         </React.Fragment>

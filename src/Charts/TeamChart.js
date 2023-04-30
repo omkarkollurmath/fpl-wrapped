@@ -169,7 +169,7 @@ const HorizontalBarChart = (props) => {
           plugins: {
             legend: {
               display: true,
-              position: "right",
+              position: "top",
               labels: {
                 fontColor: "black", // font color of legend labels
                 fontSize: 14, // font size of legend labels

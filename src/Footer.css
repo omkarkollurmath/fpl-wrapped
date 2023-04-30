@@ -1,0 +1,12 @@
+.footer-bar{
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 425px) {
+
+    .footer-bar{
+        margin-top: 25%;
+        font-size: x-small;
+    }
+
+}

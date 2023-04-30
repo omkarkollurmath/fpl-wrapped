@@ -8,66 +8,85 @@ import CarouselCards from "./CarouselCards/CarouselCards";
 import HorizontalBarChart from "./Charts/TeamChart";
 import RollingAverage from "./Charts/RollingAverage";
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 const Summary = () => {
-  const { teamId } = useParams();
   const navigate = useNavigate();
+  const { teamId } = useParams();
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(undefined);
   const [error, setError] = useState(false);
   const [isProcessed, setIsProcessed] = useState(false);
-  const [isFetching, setIsFetching] = useState(false);
 
-  const fetchData = useCallback(async (team) => {
-    setIsFetching(true);
+  const fetchData = useCallback(async () => {
     try {
-      const response = await fetch(`http://localhost:8000/get/${team}`);
+      const response = await fetch(`http://localhost:8000/get/${teamId}`);
       if (!response.ok) {
         setError(true);
       } else {
         const responseData = await response.json();
-        if (responseData["TeamID"] === undefined) {
+        console.log(responseData)
+        if(responseData["TeamID"] === undefined){
+          // need to setData received from the API
           setIsProcessed(false);
           setData(responseData);
-        } else {
+        }else{
           setIsProcessed(true);
-                 setData(responseData);
+          setData(responseData);
         }
       }
+      setLoading(false);
     } catch (error) {
       setError(true);
+      setLoading(false);
     }
-    setLoading(false);
-    setIsFetching(false);
-  }, []);
-
-  const memoizedFetchData = useCallback(() => fetchData(teamId), [fetchData, teamId]);
+  }, [teamId])
 
   useEffect(() => {
-    memoizedFetchData();
-  }, [memoizedFetchData]);
+    fetchData();
+  }, [fetchData]);
 
   useEffect(() => {
     if (error) {
-      if (!toast.isActive("invalid-team-id")) {
-        toast.error("Failed to get API response, Please check Team ID.", {
-          toastId: "invalid-team-id",
-        });
+      if(!toast.isActive("invalid-team-id")){
+        toast.error("Failed to get API response, Please check Team ID.", {toastId: "invalid-team-id"});
       }
-      navigate("/");
+      navigate('/');
     }
-  }, [navigate, error]);
+  }, [error, navigate]);
 
   return (
     loading ? (
       <LoadingPage />
     ) : (
       <div>
+        <Container fluid>
+
+        <Row>
+        <Col>
         <CarouselCards data={data} processed={isProcessed} teamID={teamId} />
-        <HorizontalBarChart
-          data={isProcessed ? data["TeamChart"] : data["weeklyData"]}
+        </Col>
+        </Row>
+
+        <Row>
+          <Col sm>
+              <HorizontalBarChart
+              data={isProcessed ? data["TeamChart"] : data["weeklyData"]}
+              processed={isProcessed}
+              teamID={teamId}
+            />
+          </Col>
+          <Col sm>
+          <RollingAverage
+          data={data["teamHistoryData"]}
           processed={isProcessed}
-          teamID={teamId}
         />
+          </Col>
+        </Row>
+        
+        
         {/* <RollingAverage
           data={data["teamHistoryData"]}
           processed={isProcessed}
@@ -80,6 +99,7 @@ const Summary = () => {
             position="top-center"
           />
         )}
+        </Container>
       </div>
     )
   );

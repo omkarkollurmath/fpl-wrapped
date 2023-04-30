@@ -1,8 +1,14 @@
+
+
 .home-page-div{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 7%;
+    padding-top: 5%;
+}
+
+div{
+  font-size: large;
 }
 
 .team-id-text{
@@ -25,4 +31,21 @@ input::-webkit-inner-spin-button {
 /* Works for Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 725px) {
+
+  .urltext{
+    font-size: 12px;
+  }
+
+  div{
+    font-size: medium;
+  }
+
+  .img-size{
+    width: 80%;
+    height: auto;
+  }
+
 }

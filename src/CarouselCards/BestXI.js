@@ -34,7 +34,7 @@ export const BestXI = (props) => {
         return(
             <div style={{display:"grid"}}>
                 <div>
-                    <Jersey teamName={teamName} height={100}/>
+                    <Jersey teamName={teamName} height={`30%`}/>
                 </div>
                 <span>{playerName}</span>
                 <span>({totalPoints} points)</span>

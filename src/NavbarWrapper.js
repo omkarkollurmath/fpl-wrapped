@@ -4,11 +4,12 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import AppIcon from './utils/fpl-wrapped-logo.png';
+import './NavbarWrapper.css';
 
 const NavbarWrapper = () => {
     return (
-      <Navbar bg="dark" variant="dark">
-        <Container>
+      <Navbar fixed="top" expand="lg" bg="dark" variant="dark" className='home-navbar'>
+        <Container fluid>
         <Navbar.Brand href="/" >
               <img
                 alt="fpl-wrapped-logo"
@@ -17,10 +18,12 @@ const NavbarWrapper = () => {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-              Fantasy Premier League - Wrapped
+              FPL - Wrapped
         </Navbar.Brand>
-        <Navbar.Collapse className="justify-content-end">
-          <Nav className="me-auto">
+
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
+        <Nav className="me-auto">
             <Nav.Link href="/about">About Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>

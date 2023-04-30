@@ -15,7 +15,13 @@ app.use(express.json());
 app.use(cors());
 
 try {
-    mongoose.connect("mongodb://localhost:27017/fplWrappedDB",{useNewUrlParser: true, useUnifiedTopology: true})
+    // mongoose.connect("mongodb://localhost:27017/fplWrappedDB",{useNewUrlParser: true, useUnifiedTopology: true})
+    const options = {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    };
+  
+  mongoose.connect('mongodb+srv://zingadeaditya24:MWSR5HGatCkIFXfI@cluster0.n3axrs8.mongodb.net/?retryWrites=true&w=majority', options);
 }catch(error){
     if(error){
         console.log(error)
