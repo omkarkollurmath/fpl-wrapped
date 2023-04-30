@@ -2,11 +2,19 @@
     margin-bottom : 20%;
 }
 
+.short-title-text{
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {
 
     .home-navbar{
         margin-bottom : 20%;
     }
-
+    .full-title-text{
+        display: none;
+    }
+    .short-title-text{
+        display: block;
+    }
 }

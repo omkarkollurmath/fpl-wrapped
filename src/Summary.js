@@ -17,17 +17,19 @@ const Summary = () => {
   const { teamId } = useParams();
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(undefined);
-  const [error, setError] = useState(false);
   const [isProcessed, setIsProcessed] = useState(false);
 
   const fetchData = useCallback(async () => {
     try {
       const response = await fetch(`http://localhost:8000/get/${teamId}`);
       if (!response.ok) {
-        setError(true);
+        if(!toast.isActive("invalid-team-id")){
+          toast.error("Failed to get API response, Please check Team ID.", {toastId: "invalid-team-id"});
+        }
+        navigate('/');
       } else {
         const responseData = await response.json();
-        console.log(responseData)
+        console.log('@@@' + JSON.stringify(responseData));
         if(responseData["TeamID"] === undefined){
           // need to setData received from the API
           setIsProcessed(false);
@@ -39,23 +41,17 @@ const Summary = () => {
       }
       setLoading(false);
     } catch (error) {
-      setError(true);
-      setLoading(false);
-    }
-  }, [teamId])
-
-  useEffect(() => {
-    fetchData();
-  }, [fetchData]);
-
-  useEffect(() => {
-    if (error) {
       if(!toast.isActive("invalid-team-id")){
         toast.error("Failed to get API response, Please check Team ID.", {toastId: "invalid-team-id"});
       }
       navigate('/');
+      setLoading(false);
     }
-  }, [error, navigate]);
+  }, [navigate, teamId])
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
 
   return (
     loading ? (
@@ -91,14 +87,12 @@ const Summary = () => {
           data={data["teamHistoryData"]}
           processed={isProcessed}
         /> */}
-        {error && (
           <ToastContainer
             autoClose={2000}
             hideProgressBar
             theme="light"
             position="top-center"
           />
-        )}
         </Container>
       </div>
     )

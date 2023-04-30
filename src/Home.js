@@ -57,9 +57,11 @@ const Home = () => {
             <div style={{fontWeight: '500', paddingTop : '5%', paddingBottom : '1%'}}>How to find you Fantasy Premier League Team ID?</div>
           
             <div>Login to your account at <a href="https://fantasy.premierleague.com">https://fantasy.premierleague.com</a> <p>and click on the "Points" tab</p></div>
-            <div style={{padding: '1%'}}>Check your browser's address bar and you should find your ID through the URL address.<p>
-                <img src={instructionImage} alt="Instructions" className="img-size"></img>
-            </p> where 497062 is the ID.</div>
+            <div style={{padding: '1%'}}>Check your browser's address bar and you should find your ID through the URL address, where 497062 is ID.
+                <p>
+                    <img src={instructionImage} alt="Instructions" className="img-size"></img>
+                </p>
+            </div>
 
             
             <ToastContainer autoClose={2000} hideProgressBar theme="light" position="top-center"/>
