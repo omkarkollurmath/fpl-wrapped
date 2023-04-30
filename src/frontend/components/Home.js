@@ -5,7 +5,7 @@ import "./Home.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Container from 'react-bootstrap/Container';
-import instructionImage from './utils/instructions.png';
+import instructionImage from '../../utils/instructions.png';
 
 const Home = () => {
 

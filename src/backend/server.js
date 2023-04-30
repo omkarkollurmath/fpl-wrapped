@@ -74,7 +74,6 @@ app.get("/get/:id", async(req,res) => {
 
         if(doc){
             console.log("Fetching from the DB!!");
-            // console.log(doc);
             return res.send(doc)
         }
         else{
@@ -110,15 +109,6 @@ app.get("/get/:id", async(req,res) => {
             
             data["weeklyData"] = gameWeekData;
 
-            //console.log(data)
-
-            // const newTeamData = new Team({
-            //     teamID,
-            //     data
-            //   });
-          
-            //   await newTeamData.save();
-
               return res.send(data);
 
         }
@@ -137,7 +127,6 @@ app.post("/post/:id", async (req, res) => {
       const doc = await Team.findOne({ TeamID: teamID });
       if (!doc) {
           const data = req.body;
-          console.log(data);
           const newData = new Team({TeamID: teamID, ...data[0]});
           await newData.validate();
           await newData.save();
@@ -151,26 +140,6 @@ app.post("/post/:id", async (req, res) => {
 });
 
 
-// app.put("/post/teamchart/:id", async(req,res) => {
-//   const teamID = req.params.id;
-
-//   try {
-//     const doc = await Team.findOneAndUpdate({ TeamID: teamID });
-//     if (doc) {
-//         const data = req.body;
-//         console.log(data);
-//         doc["TeamChart"] = data;
-//         await doc.validate();
-//         await doc.save();
-//         return res.status(200).send("Data updated successfully!");
-//     }
-//     return res.status(400).send("Data does not exist!");
-// } catch (err) {
-//     console.error(err);
-//     return res.status(503).send(err);
-// }
-
-// })
 
 app.put("/post/teamchart/:id", async (req, res) => {
   const teamID = req.params.id;
@@ -179,7 +148,6 @@ app.put("/post/teamchart/:id", async (req, res) => {
     const existingDoc = await Team.findOne({ TeamID: teamID });
 
     if (existingDoc) {
-      console.log(req.body)
       const data = req.body;
       
       if(Object.keys(existingDoc["TeamChart"]).length === 0){
@@ -194,13 +162,40 @@ app.put("/post/teamchart/:id", async (req, res) => {
       return res.status(200).send("Data updated successfully!");
     }
 
-    return res.status(400).send("Data does not exist!");
+    return res.status(404).send("Data does not exist!");
   } catch (err) {
     console.error(err);
     return res.status(503).send(err);
   }
 });
 
+app.put("/post/rollingAverage/:id", async (req, res) => {
+  const teamID = req.params.id;
+
+  try {
+    const existingDoc = await Team.findOne({ TeamID: teamID });
+
+    if (existingDoc) {
+      const data = req.body;
+      
+      if(Object.keys(existingDoc["RollingAverage"]).length === 0){
+        await Team.findOneAndUpdate(
+          { TeamID: teamID },
+          { $set: { RollingAverage: data} }
+        );
+      }else{
+        return res.status(400).send("Data already exist!");
+      }
+
+      return res.status(200).send("Data updated successfully!");
+    }
+
+    return res.status(404).send("Data does not exist!");
+  } catch (err) {
+    console.error(err);
+    return res.status(503).send(err);
+  }
+});
 
 
 

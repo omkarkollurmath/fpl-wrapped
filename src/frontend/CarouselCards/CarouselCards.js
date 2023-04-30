@@ -1,16 +1,16 @@
 import React  from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import BestCaptainPick from "./BestCaptainPick";
 import MostCaptainedPlayer from "./MostCaptainedPlayer";
 import CategoryAwards from "./CategoryAwards";
 import MostValuablePlayer from "./MostValuablePlayer";
 import BestXI from "./BestXI";
-import playerData from "../internalData/data_with_points_and_pos.json";
-
+import playerData from "../../backend/internalData/data_with_points_and_pos.json";
 
 import './Carousel.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const CarouselCards = (props) => {
   const settings = {

@@ -1,5 +1,5 @@
 import React from "react";
-import Jersey from '../Jersey';
+import Jersey from '../components/Jersey';
 
 export const BestCaptainPick = (props) => {
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useCallback } from "react";
 import Chart from "chart.js/auto";
-import playerData from "../internalData/data_with_points_and_pos.json";
-import "./TeamChart.css";
+import playerData from "../../backend/internalData/data_with_points_and_pos.json";
+import "./Chart.css";
 
 const HorizontalBarChart = (props) => {
   const canvasRef = useRef(null);

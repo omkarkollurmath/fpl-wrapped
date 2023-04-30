@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Jersey from '../Jersey';
+import Jersey from '../components/Jersey';
 import { useState } from "react";
 import Share from "../components/Share"
 

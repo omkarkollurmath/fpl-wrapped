@@ -1,24 +1,24 @@
 import React from "react";
-import Arsenal from './utils/icons/Arsenal.png';
-import AstonVilla from './utils/icons/Aston Villa.png';
-import Bournemouth from './utils/icons/Bournemouth.png';
-import Brentford from './utils/icons/Brentford.png';
-import Brighton from './utils/icons/Brighton.png';
-import Chelsea from './utils/icons/Chelsea.png';
-import CrystalPalace from './utils/icons/Crystal Palace.png';
-import Everton from './utils/icons/Everton.png';
-import Fulham from './utils/icons/Fulham.png';
-import Leeds from './utils/icons/Leeds.png';
-import Leicester from './utils/icons/Leicester.png';
-import Liverpool from './utils/icons/Liverpool.png';
-import ManCity from './utils/icons/Man City.png';
-import ManUtd from './utils/icons/Man Utd.png';
-import Newcastle from './utils/icons/Newcastle.png';
-import NottForest from "./utils/icons/Nott'm Forest.png";
-import Southampton from './utils/icons/Southampton.png';
-import Spurs from './utils/icons/Spurs.png';
-import WestHam from './utils/icons/WestHam.png';
-import Wolves from './utils/icons/Wolves.png';
+import Arsenal from '../../utils/icons/Arsenal.png';
+import AstonVilla from '../../utils/icons/Aston Villa.png';
+import Bournemouth from '../../utils/icons/Bournemouth.png';
+import Brentford from '../../utils/icons/Brentford.png';
+import Brighton from '../../utils/icons/Brighton.png';
+import Chelsea from '../../utils/icons/Chelsea.png';
+import CrystalPalace from '../../utils/icons/Crystal Palace.png';
+import Everton from '../../utils/icons/Everton.png';
+import Fulham from '../../utils/icons/Fulham.png';
+import Leeds from '../../utils/icons/Leeds.png';
+import Leicester from '../../utils/icons/Leicester.png';
+import Liverpool from '../../utils/icons/Liverpool.png';
+import ManCity from '../../utils/icons/Man City.png';
+import ManUtd from '../../utils/icons/Man Utd.png';
+import Newcastle from '../../utils/icons/Newcastle.png';
+import NottForest from "../../utils/icons/Nott'm Forest.png";
+import Southampton from '../../utils/icons/Southampton.png';
+import Spurs from '../../utils/icons/Spurs.png';
+import WestHam from '../../utils/icons/WestHam.png';
+import Wolves from '../../utils/icons/Wolves.png';
 
 export const Jersey = (props) => {
 

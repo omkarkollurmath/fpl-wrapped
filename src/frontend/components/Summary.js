@@ -4,9 +4,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import LoadingPage from "./LoadingPage";
-import CarouselCards from "./CarouselCards/CarouselCards";
-import HorizontalBarChart from "./Charts/TeamChart";
-import RollingAverage from "./Charts/RollingAverage";
+import CarouselCards from "../CarouselCards/CarouselCards";
+import HorizontalBarChart from "../Charts/TeamChart";
+import RollingAverage from "../Charts/RollingAverage";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -76,8 +76,9 @@ const Summary = () => {
           </Col>
           <Col sm>
           <RollingAverage
-          data={data["teamHistoryData"]}
+          data={isProcessed ? data["RollingAverage"] : data["teamHistoryData"]}
           processed={isProcessed}
+          teamID={teamId}
         />
           </Col>
         </Row>
