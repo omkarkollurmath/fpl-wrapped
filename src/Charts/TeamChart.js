@@ -12,7 +12,7 @@ const HorizontalBarChart = (props) => {
     async (processed, ChartData) => {
       if (!processed) {
         try {
-          const response = await fetch(
+          await fetch(
             `http://localhost:8000/post/teamchart/${props.teamID}`,
             {
               method: "PUT",
@@ -22,7 +22,6 @@ const HorizontalBarChart = (props) => {
               body: JSON.stringify(ChartData),
             }
           );
-          console.log(response);
         } catch (error) {
           console.error(error);
         }
@@ -31,7 +30,49 @@ const HorizontalBarChart = (props) => {
     [props.teamID]
   );
 
-  
+  if (!props.processed) {
+    sortedDict = {};
+    const chartData = props.data;
+
+    const playerID = [];
+
+    const teamData = {};
+
+    for (let i = 0; i < chartData.length; i++) {
+      chartData[i]["picks"].forEach((gameweek) => {
+        if (playerID.indexOf(gameweek["element"]) === -1) {
+          playerID.push(gameweek["element"]);
+        }
+      });
+    }
+
+    for (let i = 0; i < playerID.length; i++) {
+      let team = playerData
+        .filter((player) => player.id === playerID[i])
+        .map((player) => player["Team_Name"]);
+      if (team in teamData) {
+        teamData[team] += 1;
+      } else {
+        teamData[team] = 1;
+      }
+    }
+
+    Object.entries(teamData)
+      .sort((a, b) => b[1] - a[1])
+      .forEach((entry) => {
+        sortedDict[entry[0]] = entry[1];
+      });
+
+    const values = [];
+
+    for (const key in teamData) {
+      if (teamData.hasOwnProperty(key)) {
+        values.push(teamData[key]);
+      }
+    }
+  } else {
+    sortedDict = { ...props.data };
+  }
 
   if (!props.processed) {
     console.log(props);
@@ -100,6 +141,20 @@ const HorizontalBarChart = (props) => {
           ],
         },
         options: {
+          scales: {
+            x: {
+              min: 0, //Minimum value for x axis
+              ticks: {
+                stepSize: 1, //Diff between x axis values
+              },
+            },
+            y: {
+              min: 0, //Minimum value for x axis
+              ticks: {
+                autoSkip: false,
+              },
+            }
+          },
           indexAxis: "y",
           // Elements options apply to all of the options unless overridden in a dataset
           // In this case, we are setting the border of each horizontal bar to be 2px wide
@@ -132,12 +187,9 @@ const HorizontalBarChart = (props) => {
     }
 
     if (!props.processed) {
-      console.log("Calling PutData");
       putData(props.processed, sortedDict);
     }
   }, [canvasRef, sortedDict, props.processed, putData]);
-
-  console.log(sortedDict);
 
   return (
     <div className="chart-container">
