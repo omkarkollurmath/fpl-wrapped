@@ -90,7 +90,9 @@ const CarouselCards = (props) => {
           maxIdPlayerName: obj["Player_Name"],
           maxIdTeamName: obj["Team_Name"],
           maxValue: obj["Gameweek_Points"],
-          maxIdGameWeek: index + 1
+          //TODO: remove after 2022/23 season
+          //Fix is needed because we have removed gw7 which makes gw8 data on index 6
+          maxIdGameWeek: index >= 6 ? index + 2 : index + 1 
         };
       }
       return retObj;
@@ -391,14 +393,13 @@ const CarouselCards = (props) => {
   async function postData(props, processedData) {
     if(!props.processed){
       try {
-        const response = await fetch(`http://localhost:8000/post/${props.teamID}`, {
+        await fetch(`http://localhost:8000/post/${props.teamID}`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
           },
           body: JSON.stringify(processedData)
         });
-        console.log(response);
       } catch(error) {
         console.error(error);
       }
@@ -408,8 +409,6 @@ const CarouselCards = (props) => {
 
   let processedData = [];
 
-  // console.log(props.processed)
-
   if(props.processed){
     processedData.push({...props.data})
   }else{
@@ -417,12 +416,6 @@ const CarouselCards = (props) => {
     processedData.push(processData());
     postData(props, processedData);
   }
-  
-  console.log(props)
-
-  
-  
-  
 
   return (
     <Slider {...settings} arrows style={{ paddingTop: "75px" }}>

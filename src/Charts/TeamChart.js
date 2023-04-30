@@ -12,7 +12,7 @@ const HorizontalBarChart = (props) => {
     async (processed, ChartData) => {
       if (!processed) {
         try {
-          const response = await fetch(
+          await fetch(
             `http://localhost:8000/post/teamchart/${props.teamID}`,
             {
               method: "PUT",
@@ -22,7 +22,6 @@ const HorizontalBarChart = (props) => {
               body: JSON.stringify(ChartData),
             }
           );
-          console.log(response);
         } catch (error) {
           console.error(error);
         }
@@ -31,10 +30,7 @@ const HorizontalBarChart = (props) => {
     [props.teamID]
   );
 
-  
-
   if (!props.processed) {
-    console.log(props);
     sortedDict = {};
     const chartData = props.data;
 
@@ -75,10 +71,7 @@ const HorizontalBarChart = (props) => {
       }
     }
   } else {
-    console.log("Fetched from DB");
-
     sortedDict = { ...props.data };
-    console.log(sortedDict);
   }
 
   useEffect(() => {
@@ -100,6 +93,20 @@ const HorizontalBarChart = (props) => {
           ],
         },
         options: {
+          scales: {
+            x: {
+              min: 0, //Minimum value for x axis
+              ticks: {
+                stepSize: 1, //Diff between x axis values
+              },
+            },
+            y: {
+              min: 0, //Minimum value for x axis
+              ticks: {
+                autoSkip: false,
+              },
+            }
+          },
           indexAxis: "y",
           // Elements options apply to all of the options unless overridden in a dataset
           // In this case, we are setting the border of each horizontal bar to be 2px wide
@@ -132,12 +139,9 @@ const HorizontalBarChart = (props) => {
     }
 
     if (!props.processed) {
-      console.log("Calling PutData");
       putData(props.processed, sortedDict);
     }
   }, [canvasRef, sortedDict, props.processed, putData]);
-
-  console.log(sortedDict);
 
   return (
     <div className="chart-container">
