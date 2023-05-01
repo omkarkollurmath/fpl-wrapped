@@ -57,37 +57,28 @@ const Summary = () => {
     loading ? (
       <LoadingPage />
     ) : (
-      <div>
         <Container fluid>
-
-        <Row>
-        <Col>
-        <CarouselCards data={data} processed={isProcessed} teamID={teamId} />
-        </Col>
-        </Row>
-
-        <Row>
-          <Col sm>
+          <Row style={{margin: 'unset'}}>
+            <Col>
+              <CarouselCards data={data} processed={isProcessed} teamID={teamId} />
+            </Col>
+          </Row>
+          <Row>
+            <Col sm>
               <HorizontalBarChart
               data={isProcessed ? data["TeamChart"] : data["weeklyData"]}
               processed={isProcessed}
               teamID={teamId}
-            />
-          </Col>
-          <Col sm>
-          <RollingAverage
-          data={isProcessed ? data["RollingAverage"] : data["teamHistoryData"]}
-          processed={isProcessed}
-          teamID={teamId}
-        />
-          </Col>
-        </Row>
-        
-        
-        {/* <RollingAverage
-          data={data["teamHistoryData"]}
-          processed={isProcessed}
-        /> */}
+              />
+            </Col>
+            <Col sm>
+              <RollingAverage
+              data={isProcessed ? data["RollingAverage"] : data["teamHistoryData"]}
+              processed={isProcessed}
+              teamID={teamId}
+              />
+            </Col>
+          </Row>
           <ToastContainer
             autoClose={2000}
             hideProgressBar
@@ -95,7 +86,6 @@ const Summary = () => {
             position="top-center"
           />
         </Container>
-      </div>
     )
   );
 };

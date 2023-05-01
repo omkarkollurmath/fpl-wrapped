@@ -19,53 +19,54 @@ import Southampton from '../../utils/icons/Southampton.png';
 import Spurs from '../../utils/icons/Spurs.png';
 import WestHam from '../../utils/icons/WestHam.png';
 import Wolves from '../../utils/icons/Wolves.png';
+import './Jersey.css';
 
 export const Jersey = (props) => {
 
         switch (props.teamName)
         {
             case 'Arsenal':
-                return <img src={Arsenal} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Arsenal} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Aston Villa':
-                return <img src={AstonVilla} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={AstonVilla} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Bournemouth':
-                return <img src={Bournemouth} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Bournemouth} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Brentford':
-                return <img src={Brentford} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Brentford} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Brighton':
-                return <img src={Brighton} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Brighton} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Chelsea':
-                return <img src={Chelsea} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Chelsea} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Crystal Palace':
-                return <img src={CrystalPalace} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={CrystalPalace} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Everton':
-                return <img src={Everton} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Everton} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Fulham':
-                return <img src={Fulham} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Fulham} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Leeds':
-                return <img src={Leeds} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Leeds} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Leicester':
-                return <img src={Leicester} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Leicester} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Liverpool':
-                return <img src={Liverpool} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Liverpool} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Man City':
-                return <img src={ManCity} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={ManCity} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Man Utd':
-                return <img src={ManUtd} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={ManUtd} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Newcastle':
-                return <img src={Newcastle} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Newcastle} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case `Nott'm Forest`:
-                return <img src={NottForest} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={NottForest} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Southampton':
-                return <img src={Southampton} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Southampton} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Spurs':
-                return <img src={Spurs} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Spurs} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'West Ham':
-                return <img src={WestHam} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={WestHam} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             case 'Wolves':
-                return <img src={Wolves} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Wolves} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
             default :
-                return <img src={Wolves} alt={props.teamName} style={{display: "unset"}} height={props.height}/>
+                return <img src={Wolves} alt={props.teamName} style={{display: "unset"}} className='jersey'/>
         }
 }
 

@@ -9,7 +9,7 @@ export const MostCaptainedPlayer = (props) => {
     return (
         <React.Fragment>
             <div style={{fontSize : 20, fontWeight: '500', paddingBottom : '1%'}}>Most Captained Player:</div>
-            <Jersey teamName={teamName} height={200}/>
+            <Jersey teamName={teamName}/>
             <div style={{paddingTop : "1%"}}>
                 <span>{props.name} ({props.frequency} times)</span>
             </div>   

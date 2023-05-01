@@ -4,12 +4,26 @@
 }
 
 .slick-prev {
-    left: 430px;
+    left: 350px;
     z-index: 1;
   }
 
 .slick-next {
-  right: 430px;
+  right: 350px;
 }
 
+.cards-padding {
+   padding-top: 2%;
+}
 
+@media only screen and (max-width: 768px) {
+  .cards-padding {
+    padding-top: 15%;
+ }
+}
+
+@media only screen and (max-width: 320px) {
+  .cards-padding {
+    padding-top: 50%;
+ }
+}

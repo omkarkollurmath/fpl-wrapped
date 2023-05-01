@@ -9,7 +9,7 @@ export const MostValuablePlayer = (props) => {
     return (
         <React.Fragment>
             <div style={{fontSize : 20, fontWeight: '500', paddingBottom : '1%'}}>MVP</div>
-            <Jersey teamName={teamName} height={200}/>
+            <Jersey teamName={teamName}/>
             <div style={{paddingTop : "1%"}}> 
                 <span>{props.mvp.maxIdPlayerName} ({props.mvp.maxPoints} points)</span>
             </div>

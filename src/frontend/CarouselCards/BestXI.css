@@ -1,0 +1,35 @@
+.two-line-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    font-size: medium;
+}
+
+.bestxi-title{
+    font-size: medium;
+}
+
+.bench-title{
+    font-size: medium;
+}
+
+@media only screen and (max-width: 768px) {
+    .two-line-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        font-size: xx-small;
+    }
+
+    .bestxi-title{
+        font-size: small;
+    }
+
+    .bench-title{
+        font-size: small;
+    }
+}

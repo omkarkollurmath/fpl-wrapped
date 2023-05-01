@@ -1,5 +1,7 @@
 import React  from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import BestCaptainPick from "./BestCaptainPick";
 import MostCaptainedPlayer from "./MostCaptainedPlayer";
@@ -9,8 +11,6 @@ import BestXI from "./BestXI";
 import playerData from "../../backend/internalData/data_with_points_and_pos.json";
 
 import './Carousel.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const CarouselCards = (props) => {
   const settings = {
@@ -18,6 +18,14 @@ const CarouselCards = (props) => {
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   };
   
   
@@ -418,21 +426,21 @@ const CarouselCards = (props) => {
   }
 
   return (
-    <Slider {...settings} arrows style={{ paddingTop: "75px" }}>
-      <div>
+    <Slider {...settings} arrows>
+      <div className='cards-padding'>
         <BestCaptainPick name={processedData[0]["Best_Captain_Pick"]}
             teamName={processedData[0]["Best_Captain_Pick_TeamName"]}
             gameWeek={processedData[0]["Best_Captain_Pick_GameWeek"]}
             points={processedData[0]["Best_Captain_Pick_Points"]}
         />
       </div>
-      <div>
+      <div className='cards-padding'>
         <MostCaptainedPlayer name={processedData[0]["Most_Captained_Player"]} 
             teamName={processedData[0]["Most_Captained_Player_Team_Name"]} 
             frequency={processedData[0]["Frequency_Of_Most_Captained_Player"]}
         />
       </div>
-      <div>
+      <div className='cards-padding'>
         <div style={{fontSize : 20, fontWeight: '500', paddingBottom : '0.5%'}}>Best Gameweek</div>
         <div style={{paddingBottom : '3%'}}>GW{processedData[0]["Best_Week"][0]["Game Week"]} - Points: {processedData[0]["Best_Week"][0]["Points"]}</div>
 
@@ -440,7 +448,7 @@ const CarouselCards = (props) => {
         <span>GW{processedData[0]["Worst_Week"][0]["Game Week"]} - Points: {processedData[0]["Worst_Week"][0]["Points"]}</span>
 
       </div>
-      <div>
+      <div className='cards-padding'>
         <div style={{fontSize : 20, fontWeight: '500', paddingBottom : '0.5%'}}>Best Rank</div>
         <div style={{paddingBottom : '3%'}}>{processedData[0]["Best_Overall_Rank"][0]["Rank"]} in GW: {processedData[0]["Best_Overall_Rank"][0]["Game Week"]}</div>
 
@@ -458,7 +466,7 @@ const CarouselCards = (props) => {
           topForwardAward={processedData[0]["Top_Forward_Award"]}
         />
       </div>
-      <div>
+      <div className='cards-padding'>
         <MostValuablePlayer mvp={processedData[0]["Most_Valuable_Player"]}/>
       </div>
       <div>
