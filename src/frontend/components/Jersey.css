@@ -1,0 +1,9 @@
+.jersey{
+    height: 5em;
+}
+
+@media only screen and (max-width: 768px) {
+    .jersey{
+        height: 2em;
+    }
+}

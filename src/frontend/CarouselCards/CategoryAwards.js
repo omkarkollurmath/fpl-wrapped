@@ -12,32 +12,44 @@ export const CategoryAwards = (props) => {
     return (
         <React.Fragment>
         <div style={{fontSize : 20, fontWeight: '500', paddingBottom : '1%'}}>Category Awards</div>
+        <div style={{display: 'inline-grid'}}>
             <div style={{display:"inline-flex", justifyContent: 'center'}}>
                 <div style={{display:"grid", paddingRight: '4%'}}>
-                    <span style={{fontSize : 15, fontWeight: '450', paddingBottom : '1%'}}>Best Goalkeeper</span>
-                    <Jersey teamName={teamName1} height={200}/>
+                    <span style={{fontWeight: '500', paddingBottom : '1%'}}>Best Goalkeeper</span>
+                    <div>
+                        <Jersey teamName={teamName1}/>
+                    </div>
                     <span>{props.topGoalkeeperAward.maxIdPlayerName}</span>
                     <span>({props.topGoalkeeperAward.maxPoints} points)</span>
                 </div>
                 <div style={{display:"grid", paddingRight: '4%'}}>
-                    <span style={{fontSize : 15, fontWeight: '450', paddingBottom : '1%'}}>Best Defender</span>
-                    <Jersey teamName={teamName2} height={200}/>
+                    <span style={{fontWeight: '500', paddingBottom : '1%'}}>Best Defender</span>
+                    <div>
+                        <Jersey teamName={teamName2}/>
+                    </div>
                     <span>{props.topDefenderAward.maxIdPlayerName}</span>
                     <span>({props.topDefenderAward.maxPoints} points)</span>
                 </div>
+            </div>
+            <div style={{display:"inline-flex", justifyContent: 'center', paddingTop: '5%'}}>
                 <div style={{display:"grid", paddingRight: '4%'}}>
-                    <span style={{fontSize : 15, fontWeight: '450', paddingBottom : '1%'}}>Best Midfielder</span>
-                    <Jersey teamName={teamName3} height={200}/>
+                    <span style={{fontWeight: '500', paddingBottom : '1%'}}>Best Midfielder</span>
+                    <div>
+                        <Jersey teamName={teamName3}/>
+                    </div>
                     <span>{props.topMidfielderAward.maxIdPlayerName}</span>
                     <span> ({props.topMidfielderAward.maxPoints} points)</span>
                 </div>
                 <div style={{display:"grid"}}>
-                    <span style={{fontSize : 15, fontWeight: '450', paddingBottom : '1%'}}>Best Forward</span>
-                    <Jersey teamName={teamName4} height={200}/>
+                    <span style={{fontWeight: '500', paddingBottom : '1%'}}>Best Forward</span>
+                    <div>
+                        <Jersey teamName={teamName4}/>
+                    </div>
                     <span>{props.topForwardAward.maxIdPlayerName}</span>
                     <span> ({props.topForwardAward.maxPoints} points)</span>
                 </div>
             </div>
+        </div>
         </React.Fragment>
       );
 }
