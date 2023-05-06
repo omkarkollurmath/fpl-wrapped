@@ -5,6 +5,8 @@ const fetch = require('node-fetch');
 const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
 
+require('dotenv').config();
+
 const app = express();
 const PORT = process.env.PORT || 8000;
 
@@ -16,12 +18,17 @@ app.use(cors());
 
 try {
     // mongoose.connect("mongodb://localhost:27017/fplWrappedDB",{useNewUrlParser: true, useUnifiedTopology: true})
-    const options = {
+    if (!process.env.MONGO_URI) {
+      console.error('Missing MONGO_URI environment variable.');
+      process.exit(1);
+    }
+    
+    // Connect to the MongoDB database using the MONGODB_URI environment variable
+    mongoose.connect(`mongodb+srv://${process.env.username}:${process.env.password}@cluster0.n3axrs8.mongodb.net/?retryWrites=true&w=majority`, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-    };
-  
-  mongoose.connect('mongodb+srv://zingadeaditya24:MWSR5HGatCkIFXfI@cluster0.n3axrs8.mongodb.net/?retryWrites=true&w=majority', options);
+    });
+    
 }catch(error){
     if(error){
         console.log(error)
@@ -216,7 +223,7 @@ app.put("/post/rollingAverage/:id", async (req, res) => {
 // "final_rank": [4, 5, 6]
 // })
 
-app.listen(8000, () => {
+app.listen(PORT, () => {
     console.log(`Server Started at ${PORT}`)
 })
 
