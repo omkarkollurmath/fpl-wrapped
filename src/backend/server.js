@@ -17,17 +17,13 @@ app.use(express.json());
 app.use(cors());
 
 try {
-    // mongoose.connect("mongodb://localhost:27017/fplWrappedDB",{useNewUrlParser: true, useUnifiedTopology: true})
-    if (!process.env.MONGO_URI) {
-      console.error('Missing MONGO_URI environment variable.');
-      process.exit(1);
-    }
-    
     // Connect to the MongoDB database using the MONGODB_URI environment variable
-    mongoose.connect(`mongodb+srv://${process.env.username}:${process.env.password}@cluster0.n3axrs8.mongodb.net/?retryWrites=true&w=majority`, {
+    const options = {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-    });
+    };
+
+    mongoose.connect(`mongodb+srv://${process.env.username}:${process.env.password}@cluster0.n3axrs8.mongodb.net/?retryWrites=true&w=majority`, options);
     
 }catch(error){
     if(error){
@@ -37,7 +33,6 @@ try {
         console.log("Connected to DB successfully!!")
     }
 }
-// mongoose.connect("mongodb://localhost:27017/fplWrappedDB",{useNewUrlParser: true}, err => err ? console.log(err) : console.log("Connected to DB successfully!!"))
 
 const teamSchema = new mongoose.Schema({
     "TeamID" : {type : Number, unique : true},
