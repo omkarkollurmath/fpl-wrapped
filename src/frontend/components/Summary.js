@@ -60,6 +60,7 @@ const Summary = () => {
         <Container fluid>
           <Row style={{margin: 'unset'}}>
             <Col>
+            <h4>Hey, {isProcessed ? data["FirstName"] : data["manager_first_name"]}</h4>
               <CarouselCards data={data} processed={isProcessed} teamID={teamId} />
             </Col>
           </Row>

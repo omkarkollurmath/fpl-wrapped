@@ -41,6 +41,8 @@ try {
 
 const teamSchema = new mongoose.Schema({
     "TeamID" : {type : Number, unique : true},
+    "FirstName" : {type : String},
+    "LastName" : {type : String},
     "Best_Captain_Pick" : {type : String},
     "Best_Captain_Pick_TeamName" : {type : String},
     "Best_Captain_Pick_GameWeek":{type : Number},
@@ -68,85 +70,100 @@ const teamSchema = new mongoose.Schema({
 
 const Team = mongoose.model("Team", teamSchema);
 
+app.get("/get/:id", async (req, res) => {
+  const teamID = req.params.id;
+  const data = {};
 
-app.get("/get/:id", async(req,res) => {
+  try {
+    const doc = await Team.findOne({ TeamID: teamID });
 
-    const teamID = req.params.id;
+    if (doc) {
+      console.log("Fetching from the DB!!");
+      return res.send(doc);
+    } else {
+      console.log("Fetching from FPL API");
+      const ManagerData = await fetch(
+        `https://fantasy.premierleague.com/api/entry/${teamID}/`
+      )
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("No record found");
+          }
+          return response.json();
+        })
+        .then((data) => data)
+        .catch((error) => {
+          res.status(404).send(error);
+          return;
+        });
 
-    const data = {}
-
-    try {
-
-        const doc = await Team.findOne({TeamID : teamID});
-
-        if(doc){
-            console.log("Fetching from the DB!!");
-            return res.send(doc)
+        if(ManagerData !== undefined){
+          const first_name = ManagerData["player_first_name"]
+          const last_name = ManagerData["player_last_name"]
+          data["manager_first_name"] = first_name
+          data["manager_last_name"] = last_name
+        }else{
+          data["manager_first_name"] = 'User'
+          data["manager_last_name"] = ''
         }
-        else{
-        console.log("Fetching from FPL API");
-        const teamHistoryData = await fetch(`https://fantasy.premierleague.com/api/entry/${teamID}/history/`)
-                              .then(response => {
-                                if(!response.ok){
-                                    throw new Error('No record found');
-                                }
-                                return response.json();
-                              })
-                              .then(data => data)
-                              .catch(error => {
-                                res.status(404).send(error);
-                                return;
-                              })
 
-        if(teamHistoryData !== undefined){
+      const teamHistoryData = await fetch(
+        `https://fantasy.premierleague.com/api/entry/${teamID}/history/`
+      )
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("No record found");
+          }
+          return response.json();
+        })
+        .then((data) => data)
+        .catch((error) => {
+          res.status(404).send(error);
+          return;
+        });
 
-            const response = teamHistoryData;
+      if (teamHistoryData !== undefined) {
+        const response = teamHistoryData;
+        data["teamHistoryData"] = response;
+        const gameWeekData = [];
 
-            data["teamHistoryData"] = response;
-
-            
-
-            const gameWeekData = []
-
-            for(let i=1;i<=response["current"].length; i++){
-                let weekData = await fetch(`https://fantasy.premierleague.com/api/entry/${teamID}/event/${i}/picks/`);
-                let responseData = await weekData.json();
-                gameWeekData.push(responseData);
-            }
-            
-            data["weeklyData"] = gameWeekData;
-
-              return res.send(data);
-
+        for (let i = 1; i <= response["current"].length; i++) {
+          let weekData = await fetch(
+            `https://fantasy.premierleague.com/api/entry/${teamID}/event/${i}/picks/`
+          );
+          let responseData = await weekData.json();
+          gameWeekData.push(responseData);
         }
+
+        data["weeklyData"] = gameWeekData;
+
+        return res.send(data);
+      }
     }
-    }catch(err){
-        console.error(err);
-        return res.status(503).send(err);
-    }
-}
-)
+  } catch (err) {
+    console.error(err);
+    return res.status(503).send(err);
+  }
+});
 
 app.post("/post/:id", async (req, res) => {
   const teamID = req.params.id;
 
   try {
-      const doc = await Team.findOne({ TeamID: teamID });
-      if (!doc) {
-          const data = req.body;
-          const newData = new Team({TeamID: teamID, ...data[0]});
-          await newData.validate();
-          await newData.save();
-          return res.status(200).send("Data added successfully!");
-      }
-      return res.status(400).send("Data already exists!");
+    const doc = await Team.findOne({ TeamID: teamID });
+    if (!doc) {
+      const data = req.body;
+      const newData = new Team({ TeamID: teamID, ...data[0] });
+      await newData.validate();
+      await newData.save();
+      return res.status(200).send("Data added successfully!");
+    }
+    return res.status(400).send("Data already exists!");
   } catch (err) {
-      console.error(err);
-      return res.status(503).send(err);
+    console.error(err);
+    return res.status(503).send(err);
   }
 });
-
-
 
 app.put("/post/teamchart/:id", async (req, res) => {
   const teamID = req.params.id;
@@ -156,13 +173,13 @@ app.put("/post/teamchart/:id", async (req, res) => {
 
     if (existingDoc) {
       const data = req.body;
-      
-      if(Object.keys(existingDoc["TeamChart"]).length === 0){
+
+      if (Object.keys(existingDoc["TeamChart"]).length === 0) {
         await Team.findOneAndUpdate(
           { TeamID: teamID },
-          { $set: { TeamChart: data} }
+          { $set: { TeamChart: data } }
         );
-      }else{
+      } else {
         return res.status(400).send("Data already exist!");
       }
 
@@ -184,13 +201,13 @@ app.put("/post/rollingAverage/:id", async (req, res) => {
 
     if (existingDoc) {
       const data = req.body;
-      
-      if(Object.keys(existingDoc["RollingAverage"]).length === 0){
+
+      if (Object.keys(existingDoc["RollingAverage"]).length === 0) {
         await Team.findOneAndUpdate(
           { TeamID: teamID },
-          { $set: { RollingAverage: data} }
+          { $set: { RollingAverage: data } }
         );
-      }else{
+      } else {
         return res.status(400).send("Data already exist!");
       }
 
@@ -204,26 +221,6 @@ app.put("/post/rollingAverage/:id", async (req, res) => {
   }
 });
 
-
-
-
-
-// Team.create({"teamID": 123456,
-// "bestxi": ["Player1", "Player2", "Player3"],
-// "category_awards": ["Category1", "Category2"],
-// "mvp": ["Player1"],
-// "rolling_average": [1.23, 3.45, 2.31],
-// "players_from_which_club": ["Club1", "Club2", "Club3"],
-// "most_captained_player": ["Player1"],
-// "best_cap_pick": ["Player1"],
-// "best_gw": [1, 2, 3],
-// "worst_week": [10, 12, 15],
-// "best_rank": [1, 2, 3],
-// "worst_rank": [100, 200, 300],
-// "final_rank": [4, 5, 6]
-// })
-
 app.listen(PORT, () => {
-    console.log(`Server Started at ${PORT}`)
-})
-
+  console.log(`Server Started at ${PORT}`);
+});
