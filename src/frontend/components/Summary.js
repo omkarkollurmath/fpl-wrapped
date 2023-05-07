@@ -21,7 +21,7 @@ const Summary = () => {
 
   const fetchData = useCallback(async () => {
     try {
-      const response = await fetch(`http://localhost:8000/get/${teamId}`);
+      const response = await fetch(`https://fpl-wrapped.onrender.com/get/${teamId}`);
       if (!response.ok) {
         if(!toast.isActive("invalid-team-id")){
           toast.error("Failed to get API response, Please check Team ID.", {toastId: "invalid-team-id"});
@@ -29,7 +29,6 @@ const Summary = () => {
         navigate('/');
       } else {
         const responseData = await response.json();
-        console.log('@@@' + JSON.stringify(responseData));
         if(responseData["TeamID"] === undefined){
           // need to setData received from the API
           setIsProcessed(false);
