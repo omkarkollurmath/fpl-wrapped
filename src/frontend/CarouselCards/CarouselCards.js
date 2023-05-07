@@ -363,7 +363,9 @@ const CarouselCards = (props) => {
       );
 
     return {
-      TeamID : +props.teamID, 
+      TeamID : +props.teamID,
+      FirstName : props.data["manager_first_name"],
+      LastName : props.data["manager_last_name"], 
       Best_Captain_Pick: bestCaptainPick["maxIdPlayerName"],
       Best_Captain_Pick_TeamName: bestCaptainPick["maxIdTeamName"],
       Best_Captain_Pick_GameWeek: bestCaptainPick["maxIdGameWeek"],
