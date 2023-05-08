@@ -21,7 +21,7 @@ const Summary = () => {
 
   const fetchData = useCallback(async () => {
     try {
-      const response = await fetch(`https://fpl-wrapped.onrender.com/get/${teamId}`);
+      const response = await fetch(`https://fpl-wrapped-backend.onrender.com/get/${teamId}`);
       if (!response.ok) {
         if(!toast.isActive("invalid-team-id")){
           toast.error("Failed to get API response, Please check Team ID.", {toastId: "invalid-team-id"});

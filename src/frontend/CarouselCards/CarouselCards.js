@@ -403,7 +403,7 @@ const CarouselCards = (props) => {
   async function postData(props, processedData) {
     if(!props.processed){
       try {
-        await fetch(`https://fpl-wrapped.onrender.com/post/${props.teamID}`, {
+        await fetch(`https://fpl-wrapped-backend.onrender.com/post/${props.teamID}`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
