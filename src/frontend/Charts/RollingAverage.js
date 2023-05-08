@@ -12,7 +12,7 @@ const RollingAverage = (props) => {
       if (!processed) {
         try {
           await fetch(
-            `https://fpl-wrapped.onrender.com/post/rollingAverage/${props.teamID}`,
+            `https://fpl-wrapped-backend.onrender.com/post/rollingAverage/${props.teamID}`,
             {
               method: "PUT",
               headers: {

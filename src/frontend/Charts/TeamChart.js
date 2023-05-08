@@ -13,7 +13,7 @@ const HorizontalBarChart = (props) => {
       if (!processed) {
         try {
           await fetch(
-            `https://fpl-wrapped.onrender.com/post/teamchart/${props.teamID}`,
+            `https://fpl-wrapped-backend.onrender.com/post/teamchart/${props.teamID}`,
             {
               method: "PUT",
               headers: {
