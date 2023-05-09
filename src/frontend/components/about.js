@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Aditya from './../../utils/amod.jpg'
 import Amod from './../../utils/amod.jpg'
-import Omkar from './../../utils/amod.jpg'
+import Omkar from './../../utils/omkar.jpg'
 import Instagram from './../../utils/instagram.png'
 import LinkedIn from './../../utils/linkedin.png'
 import Twitter from './../../utils/twitter.png'
@@ -29,10 +29,13 @@ const AboutUs = () => {
                 <div>
                   <img src={Aditya} alt="Aditya Zingade"/>
                   <div><b>Aditya Zingade</b></div>
-                  <div>CSO</div>
                   <div style={{marginTop: "4%", display: "flex", justifyContent: "space-around"}}>
-                    <img src={LinkedIn} alt="LinkedIn"/>
-                    <img src={Instagram} alt="Instagram"/>
+                    <a href="https://www.linkedin.com/in/aditya-z/" target="_blank" rel="noopener noreferrer">
+                      <img src={LinkedIn} alt="LinkedIn"/>
+                    </a>
+                    <a href="https://www.instagram.com/aszingade2498/" target="_blank" rel="noopener noreferrer">
+                      <img src={Instagram} alt="Instagram"/>
+                    </a>
                   </div>
                 </div>
               </Col>
@@ -40,11 +43,16 @@ const AboutUs = () => {
               <div>
                 <img src={Amod} alt="Amod Sahasrabudhe"/>
                 <div><b>Amod Sahasrabudhe</b></div>
-                <div>Data Scientist</div>
                 <div style={{marginTop: "4%", display: "flex", justifyContent: "space-around"}}>
-                  <img src={LinkedIn} alt="LinkedIn"/>
-                  <img src={Instagram} alt="Instagram"/>
-                  <img src={Twitter} alt="Twitter"/>
+                  <a href="https://www.linkedin.com/in/amod-sahasrabudhe/" target="_blank" rel="noopener noreferrer">
+                    <img src={LinkedIn} alt="LinkedIn"/>
+                  </a>
+                  <a href="https://www.instagram.com/amod351998/" target="_blank" rel="noopener noreferrer">
+                    <img src={Instagram} alt="Instagram"/>
+                  </a>
+                  <a href="https://twitter.com/amod3598" target="_blank" rel="noopener noreferrer">
+                    <img src={Twitter} alt="Twitter"/>
+                  </a>
                 </div>
               </div>
               </Col>
@@ -52,11 +60,16 @@ const AboutUs = () => {
               <div>
                 <img src={Omkar} alt="Omkar Kollurmath"/>
                 <div><b>Omkar Kollurmath</b></div>
-                <div>Software Developer</div>
                 <div style={{marginTop: "4%", display: "flex", justifyContent: "space-around"}}>
-                  <img src={LinkedIn} alt="LinkedIn"/>
-                  <img src={Instagram} alt="Instagram"/>
-                  <img src={Twitter} alt="Twitter"/>
+                  <a href="https://www.linkedin.com/in/omkar-kollurmath-204616184/" target="_blank" rel="noopener noreferrer">
+                    <img src={LinkedIn} alt="LinkedIn"/>
+                  </a>
+                  <a href="https://www.instagram.com/ok12.3/" target="_blank" rel="noopener noreferrer">
+                    <img src={Instagram} alt="Instagram"/>
+                  </a>
+                  <a href="https://twitter.com/OmkarKollurmath" target="_blank" rel="noopener noreferrer">
+                    <img src={Twitter} alt="Twitter"/>
+                  </a>
                 </div>
               </div>
               </Col>
