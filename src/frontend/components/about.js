@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Aditya from './../../utils/amod.jpg'
+import Aditya from './../../utils/aditya.jpg'
 import Amod from './../../utils/amod.jpg'
 import Omkar from './../../utils/omkar.jpg'
 import Instagram from './../../utils/instagram.png'
