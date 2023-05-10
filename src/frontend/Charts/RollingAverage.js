@@ -37,7 +37,7 @@ const RollingAverage = (props) => {
 
   } else {
     rollingData = { ...props.data };
-    console.log("Fetched from DB");
+
   }
 
   useEffect(() => {
