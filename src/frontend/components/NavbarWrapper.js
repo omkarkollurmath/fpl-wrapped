@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import AppIcon from '../../utils/fpl-wrapped-logo.png';
+import BuyMeACoffeeIcon from '../../utils/bmc-logo-no-background.png';
 import './NavbarWrapper.css';
 
 const NavbarWrapper = () => {
@@ -34,6 +35,13 @@ const NavbarWrapper = () => {
         <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
         <Nav className="me-auto">
             <Nav.Link href="/about">About Us</Nav.Link>
+            <Nav.Link href="https://www.buymeacoffee.com/fplwrapped" target="_blank">
+              <img
+                src={BuyMeACoffeeIcon}
+                style={{height: '36px', width: '30px', margin: '0', padding: '0'}}
+                alt="Buy Me A Coffee"
+              />
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
         </Container>

@@ -75,7 +75,6 @@ const HorizontalBarChart = (props) => {
   }
 
   if (!props.processed) {
-    console.log(props);
     sortedDict = {};
     const chartData = props.data;
 
@@ -116,10 +115,7 @@ const HorizontalBarChart = (props) => {
       }
     }
   } else {
-    console.log("Fetched from DB");
-
     sortedDict = { ...props.data };
-    console.log(sortedDict);
   }
 
   useEffect(() => {
