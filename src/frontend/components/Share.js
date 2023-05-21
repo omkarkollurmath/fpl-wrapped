@@ -3,7 +3,7 @@ import React from "react"
 
 const Share = ({description}) => {
   // TODO - Add the URL we want here
-  const url = window.location.href;
+  const url = "https://fpl-wrapped-frontend.onrender.com/";
 
   return (
     <>
