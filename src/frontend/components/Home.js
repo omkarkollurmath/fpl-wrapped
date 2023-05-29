@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Container from 'react-bootstrap/Container';
 import instructionImage from '../../utils/instructions.png';
+import BuyMeACoffeeIcon from '../../utils/bmc-logo-no-background.png';
 
 const Home = () => {
 
@@ -53,6 +54,16 @@ const Home = () => {
                 <Button variant="primary" onClick={handleSubmitButtonOnClick}>
                     <span>Submit</span>
                 </Button>
+            </div>
+            <div style={{paddingTop:"2%"}}>
+                <a href="https://www.buymeacoffee.com/fplwrapped" target="_blank" rel="noreferrer">
+                    <span style={{paddingRight:"1%"}}>Buy Us A Coffee</span>
+                    <img
+                        src={BuyMeACoffeeIcon}
+                        style={{height: '36px', width: '30px', margin: '0', padding: '0'}}
+                        alt="Buy Me A Coffee"
+                    />
+                </a>
             </div>
             <div style={{fontWeight: '500', paddingTop : '5%', paddingBottom : '1%'}}>How to find you Fantasy Premier League Team ID?</div>
           
