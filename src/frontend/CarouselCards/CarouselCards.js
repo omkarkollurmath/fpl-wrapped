@@ -86,21 +86,14 @@ const CarouselCards = (props) => {
         captainIdPointsObjectForAllGameWeeks.push(getGameWeekPointsForCaptain[0]);
     }
 
-    //TODO: we might no need this below filter which filters out gameweek captains without gameweek points
-    //This is temporary solution to inconsistency of data in data_with_points_and_pos.json
-    const removeObjectsWithoutGameWeekPoints = captainIdPointsObjectForAllGameWeeks
-    .filter((object) => object["Gameweek_Points"]);
-
-    const bestCaptainPick = removeObjectsWithoutGameWeekPoints.reduce((retObj, obj, index) => {
+    const bestCaptainPick = captainIdPointsObjectForAllGameWeeks.reduce((retObj, obj, index) => {
       if (obj["Gameweek_Points"] > retObj.maxValue) {
         return {
           maxId: obj["id"],
           maxIdPlayerName: obj["Player_Name"],
           maxIdTeamName: obj["Team_Name"],
           maxValue: obj["Gameweek_Points"],
-          //TODO: remove after 2022/23 season
-          //Fix is needed because we have removed gw7 which makes gw8 data on index 6
-          maxIdGameWeek: index >= 6 ? index + 2 : index + 1 
+          maxIdGameWeek: index + 1 
         };
       }
       return retObj;
